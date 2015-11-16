@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Hello 2015"
+title:      "Welcome to Hux Blog"
 subtitle:   " \"Hello World, Hello Blog\""
 date:       2015-01-29 12:00:00
 author:     "Hux"
@@ -16,7 +16,7 @@ tags:
 
 Hux 的 Blog 就这么开通了。
 
-[跳过废话，直接看技术实现 ](#build) 
+[跳过废话，直接看技术实现 ](#build)
 
 
 
@@ -42,7 +42,7 @@ Hux 的 Blog 就这么开通了。
 * **Markdown** 带来的优雅写作体验
 * 非常熟悉的 Git workflow ，**Git Commit 即 Blog Post**
 * 利用 GitHub Pages 的域名和免费无限空间，不用自己折腾主机
-	* 如果需要自定义域名，也只需要简单改改 DNS 加个 CNAME 就好了 
+	* 如果需要自定义域名，也只需要简单改改 DNS 加个 CNAME 就好了
 * Jekyll 的自定制非常容易，基本就是个模版引擎
 
 
@@ -77,5 +77,3 @@ Theme 的 CSS 是基于 Bootstrap 定制的，看得不爽的地方直接在 Les
 如果你恰好逛到了这里，希望你也能喜欢这个博客主题。
 
 —— Hux 后记于 2015.10
-
-

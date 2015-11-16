@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "JavaScript Module Loader"
+title:      "Example Post with Code Highlight"
 subtitle:   "CommonJS，RequireJS，SeaJS 归纳笔记"
 date:       2015-05-25
 author:     "Hux"
@@ -52,7 +52,7 @@ CommonJS 本质上只是一套规范（API 定义），而 Node.js 采用并实�
 
 var a = require('./a')  // 加载模块（同步加载）
 a.doSomething()         // 等上一句执行完才会执行
-  
+
 exports.b = function(){ // 暴露 b 函数接口
   // do something
 }
@@ -94,10 +94,10 @@ CommonJS 前身叫 ServerJS ，**后来希望能更加 COMMON，成为通吃各�
 3. **Modules/2.0** 流派。这个观点觉得浏览器有自身的特征，不应该直接用 Modules/1.x 规范，但应该尽可能与 Modules/1.x 规范保持一致。这个观点下的典型代表是 BravoJS 和 FlyScript 的作者。BravoJS 作者对 CommonJS 的社区的贡献很大，这份 Modules/2.0-draft 规范花了很多心思。FlyScript 的作者提出了 Modules/Wrappings 规范，这规范是 CMD 规范的前身。可惜的是 BravoJS 太学院派，FlyScript 后来做了自我阉割，将整个网站（flyscript.org）下线了。这个观点在本文中的典型代表就是 SeaJS 和 CMD 了
 
 
-补一嘴：阿里 KISSY 的 KMD 其实跟 AMD 非常类似，只是用 `add`和`use` 两个源自于 YUI Modules 的函数名替换了 `define` 和 `require` ，但其原理更接近 RequireJS ，与 YUI Modules 的 `Y` 沙箱 Attach 机制并不相同 
+补一嘴：阿里 KISSY 的 KMD 其实跟 AMD 非常类似，只是用 `add`和`use` 两个源自于 YUI Modules 的函数名替换了 `define` 和 `require` ，但其原理更接近 RequireJS ，与 YUI Modules 的 `Y` 沙箱 Attach 机制并不相同
 
 
-## RequireJS & AMD 
+## RequireJS & AMD
 
 [AMD (Async Module Definition)](http://wiki.commonjs.org/wiki/Modules/AsynchronousDefinition) 是 RequireJS 在推广过程中对模块定义的规范化产出。
 
@@ -117,7 +117,7 @@ function Programmer (){
 Programmer.prototype = new Employee();
 
 //如果 require call 是异步的，那么肯定 error
-//因为在执行这句前 Employee 模块肯定来不及加载进来 
+//因为在执行这句前 Employee 模块肯定来不及加载进来
 ```
 > As the comment indicates above, if require() is async, this code will not work. However, loading scripts synchronously in the browser kills performance. So, what to do?
 
@@ -130,11 +130,11 @@ Programmer.prototype = new Employee();
 define(
     [types/Employee],    //依赖
     function(Employee){  //这个回调会在所有依赖都被加载后才执行
-    
+
         function Programmer(){
             //do something
         };
-    
+
         Programmer.prototype = new Employee();
         return Programmer;  //return Constructor
     }
@@ -197,7 +197,7 @@ AMD 推荐的风格并不使用`require`，而是通过参数传入，破坏了*
 ```
 define(["a", "b", "c"],function(a, b, c){
     // 提前申明了并初始化了所有模块
-    
+
     true || b.foo(); //即便根本没用到模块 b，但 b 还是提前执行了。
 })
 ```
@@ -215,7 +215,7 @@ if(status){
 }
 ```
 
-## SeaJS & CMD 
+## SeaJS & CMD
 
 CMD (Common Module Definition) 是 [SeaJS](http://seajs.org/docs/) 在推广过程中对模块定义的规范化产出，是 Modules/2.0 流派的支持者，因此 SeaJS 的模块写法尽可能与 Modules/1.x 规范保持一致。
 
@@ -225,9 +225,9 @@ CMD (Common Module Definition) 是 [SeaJS](http://seajs.org/docs/) 在推广过�
     * [English (CMDJS-repo)](https://github.com/cmdjs/specification/blob/master/draft/module.md)
     * [Chinese (SeaJS-repo)](https://github.com/seajs/seajs/issues/242)
 
-    
+
 CMD 主要有 define, factory, require, export 这么几个东西
- 
+
  * define `define(id?, deps?, factory)`
  * factory `factory(require, exports, module)`
  * require `require(id)`
@@ -245,12 +245,12 @@ define(function(require, exports) {
     var a = require('./a');
     // 调用模块 a 的方法
     a.doSomething();
-  
+
     // 对外提供 foo 属性
     exports.foo = 'bar';
     // 对外提供 doSomething 方法
     exports.doSomething = function() {};
-  
+
 });
 ```
 
@@ -260,7 +260,7 @@ define(function(require, exports) {
 define('hello', ['jquery'], function(require, exports, module) {
 
     // 模块代码...
-  
+
     // 直接通过 return 暴露接口
     return {
         foo: 'bar',
@@ -289,10 +289,10 @@ Sea.js 借鉴了 RequireJS 的不少东西，比如将 FlyScript 中的 module.d
 // AMD 默认推荐
 
 define(['./a', './b'], function(a, b) {  // 依赖前置，提前执行
-  
+
     a.doSomething()
     b.doSomething()
-  
+
 })
 
 ```
@@ -301,12 +301,12 @@ define(['./a', './b'], function(a, b) {  // 依赖前置，提前执行
 // CMD
 
 define(function(require, exports, module) {
-  
+
     var a = require('./a')
     a.doSomething()
-  
+
     var b = require('./b') // 依赖就近，延迟执行
-    b.doSomething() 
+    b.doSomething()
 })
 ```
 
@@ -318,4 +318,3 @@ define(function(require, exports, module) {
 ## WebPack
 
 > working...
-
