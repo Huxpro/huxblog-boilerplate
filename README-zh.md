@@ -96,12 +96,12 @@ tags:
 ![](http://huangxuan.me/img/blog-sidebar.jpg)
 
 设置是在 `_config.yml`文件里面的`Sidebar settings`那块。
-
+```
 # Sidebar settings
 sidebar: true  #添加侧边栏
 sidebar-about-description: "简单的描述一下你自己"
 sidebar-avatar: /img/avatar-hux.jpg     #你的大头贴，请使用绝对地址.
-
+```
 
 侧边栏是响应式布局的，当屏幕尺寸小于992px的时候，侧边栏就会移动到底部。具体请见bootstrap栅格系统 <http://v3.bootcss.com/css/>
 
