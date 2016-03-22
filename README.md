@@ -1,9 +1,15 @@
-# HuxBlog Boilerplate
+# Bobop.C Blog
 
-##### This is the boilerplate of [Hux Blog](https://github.com/Huxpro/huxpro.github.io), all documents is over there!
+###[http://www.playingfingers.com](http://www.playingfingers.com)
 
-#### [View Boilerplate &rarr;](http://huangxuan.me/huxblog-boilerplate/)
 
-#### [View Live Hux Blog &rarr;](http://huangxuan.me)
+## Features
 
-## If you like Hux Blog, Please star [huxpro.github.io repo](https://github.com/Huxpro/huxpro.github.io) instead of this! Thank you!
+- Underconstruction
+- Coming soon...
+
+
+## Thanks
+
+1. This theme is forked from [Huxpro/huxblog-boilerplate](https://github.com/Huxpro/huxblog-boilerplate). Thanks a lot!
+2. Thanks Jekyll, Bootstrap and Github Pages!
