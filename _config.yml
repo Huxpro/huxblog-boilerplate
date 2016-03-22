@@ -2,10 +2,10 @@
 title: Bebop.C Blog
 SEOTitle: Bebop.C的博客 | Bebop.C Blog
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
+email: suburbia.x.chaos@gmail.com
 description: "这个description会在哪里显示呢"
 keyword: ""
-url: "http://huangxuan.me"              # your host, for absolute URL
+url: "http://playingfingers.com"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
@@ -75,8 +75,8 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "Hux Blog",
-        href: "http://huangxuan.me"
+        title: "Bebop.C Blog",
+        href: "http://playingfingers.com"
     },{
         title: "Foo",
         href: "#"
