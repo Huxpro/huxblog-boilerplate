@@ -8,11 +8,13 @@ header-img: "img/about-bg.jpg"
 <!-- Language Selector -->
 <select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
     <option value="0" selected> 中文 Chinese </option>
-    <option value="1"> 英语 English </option>
+    <option value="1"> 英文 English </option>
 </select>
 
 <!-- Chinese Version -->
-<div class="zh">
+<div class="zh post-container">
+
+    <!--copied from markdown -->
     <blockquote>
         唯有恐惧，方能勇敢。
     </blockquote>
@@ -25,7 +27,7 @@ header-img: "img/about-bg.jpg"
 </div>
 
 <!-- English Version -->
-<div class="en">
+<div class="en post-container">
     <blockquote>
         Math & music.
     </blockquote>
@@ -42,18 +44,42 @@ header-img: "img/about-bg.jpg"
 
 <!-- Handle Language Change -->
 <script type="text/javascript">
+    // get nodes
     var $zh = document.querySelector(".zh");
     var $en = document.querySelector(".en");
-    function onLanChange(index){
-        if(index == 0){
-            $zh.style.display = "block";
-            $en.style.display = "none";
-        }else{
+    var $select = document.querySelector("select");
+
+    // bind hashchange event
+    window.addEventListener('hashchange', _render);
+
+    // handle render
+    function _render(){
+        var _hash = window.location.hash;
+        // en
+        if(_hash == "#en"){
+            $select.selectedIndex = 1;
             $en.style.display = "block";
             $zh.style.display = "none";
+        // zh by default
+        }else{
+            // not trigger onChange, otherwise cause a loop call.
+            $select.selectedIndex = 0;
+            $zh.style.display = "block";
+            $en.style.display = "none";
         }
     }
-    onLanChange(0);
+
+    // handle select change
+    function onLanChange(index){
+        if(index == 0){
+            window.location.hash = "#zh"
+        }else{
+            window.location.hash = "#en"
+        }
+    }
+
+    // init
+    _render();
 </script>
 
 
@@ -73,13 +99,11 @@ header-img: "img/about-bg.jpg"
 </div>
 <!-- 多说评论框 end -->
 
-<!-- Duoshuo hacking -->
-<input id="dsUser" type="hidden" value="{{site.duoshuo_username}}"  />
-
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
     // dynamic User hacking by Hux
-    var _user = document.getElementById('dsUser').value;
+    var _user = '{{site.duoshuo_username}}';
+
     // duoshuo comment query.
     var duoshuoQuery = {short_name: _user };
     (function() {
