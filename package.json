@@ -3,7 +3,7 @@
     "title": "Bebop.C Blog",
     "version": "1.0.0",
     "homepage": "http://playingfingers.com",
-    "author": "Hux",
+    "author": "Bebop.C",
     "devDependencies": {
         "grunt": "~0.4.5",
         "grunt-contrib-less": "~0.11.4",
