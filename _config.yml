@@ -54,7 +54,7 @@ duoshuo_share: true                     # set to false if you want to use Commen
 # Baidu Analytics
 ba_track_id: d59d067e8500ddc9aafddb11c2cdc1ab
 # Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+ga_track_id: 'UA-75516959-1'            # Format: UA-xxxxxx-xx
 ga_domain: playingfingers.com
 
 
