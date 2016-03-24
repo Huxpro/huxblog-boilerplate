@@ -11,5 +11,5 @@
 
 ## Thanks
 
-This theme is forked from [Huxpro/huxblog-boilerplate](https://github.com/Huxpro/huxblog-boilerplate). Thanks a lot!<br>
+This theme is forked from [Huxpro/huxblog-boilerplate](https://github.com/Huxpro/huxblog-boilerplate). Thanks a lot!  
 Thank Jekyll, Bootstrap and Github Pages!
