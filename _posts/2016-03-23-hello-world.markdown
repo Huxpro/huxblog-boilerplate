@@ -14,3 +14,5 @@ tags:
 
 ## 前言
 
+![java-javascript](/img/in-post/post-hello-world/javascript-java.jpg)
+<small class="img-hint">图题</small>
