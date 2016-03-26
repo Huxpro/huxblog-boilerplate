@@ -2,7 +2,7 @@
 layout:     post
 title:      "Github Pages + Jekyll 独立博客一小时快速搭建&上线指南"
 subtitle:   "分享你的知识和观点"
-date:       2016-03-26 21:00:00
+date:       2016-03-26
 author:     "Bebop.C"
 header-img: "img/post-build-a-blog.jpg"
 tags:
