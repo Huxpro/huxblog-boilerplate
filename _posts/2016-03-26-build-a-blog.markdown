@@ -59,7 +59,7 @@ Github是全球知名的使用Git系统的一个免费远程仓库（Repository�
 于是GitHub Pages诞生了。它是Github提供给托管项目的开发者一个更个性化展示自己项目的方法，使用GitHub Pages服务可以编写同样是托管在Github上的静态网页。
 
 比如上面Jekyll项目的GitHub Pages长成这样：
-![jekyll](/img/in-post/post-build-a-blog/jekyll.jpg)
+![jekyll](http://7xsb7g.com1.z0.glb.clouddn.com/post-build-a-blog-jekyll.jpg)
 
 Github Pages分为用户、组织、项目三种网站，我们的Blog要用到的是 [User Pages site](https://help.github.com/articles/user-organization-and-project-pages/) ，即用户网站。
 
