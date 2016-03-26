@@ -12,7 +12,7 @@ tags:
 
 
 
-# 只要一小时？！
+## 只要一小时？！
 
 
 > 人生道路上布满了坑，于是有了人生导师。  
@@ -29,7 +29,7 @@ tags:
 
 **版权声明：欢迎分享，转载请注明出处。**
 
-# 目录
+## 目录
 
 
 1.  [Why Github Pages + Jekyll](#why-github-pages--jekyll)
@@ -43,7 +43,7 @@ tags:
 9.  [扩展阅读](#section-13)
 
 
-# Why Github Pages + Jekyll
+## Why Github Pages + Jekyll
 
 ### Git & Github
 
@@ -93,13 +93,13 @@ Github Pages + Jekyll 方案的不足：
 
 所以，如果你只是想做一个分享见闻心得的博客，这个方案非常适合你。
 
-# 注册Github
+## 注册Github
 
 到 [Github的官方网站](https://github.com/) 注册账户，记住自己的用户名，后面会常用到。
 
 Tip: 有时网络状况不好可以喝杯牛奶再来。
 
-# 关于域名
+## 关于域名
 
 ### 符合下面条件，可以跳过此部分：  
 
@@ -166,7 +166,7 @@ NS类型记录是默认不可变的。
 CNAME类型的记录值填写 `{username}.github.io`  
 Tip: 用你的Github用户名替换上面的 `{username}`
 
-# 安装Git环境
+## 安装Git环境
 
 
 > 本文主要介绍windows环境下的安装，其他环境可参考[廖大神的教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137396287703354d8c6c01c904c7d9ff056ae23da865a000)。
@@ -206,7 +206,7 @@ $ ssh-keygen -t rsa -C"{name@site.com}"    // 用你的邮箱替换{name@site.co
 
 至此SSH配置完毕。
 
-# 建立个人 GitHub Pages
+## 建立个人 GitHub Pages
 
 建立基于Jekyll的个人Github Pages有两条路线：  
 1.自己学习Jekyll教程和网页设计，设计绝对自我基因的网页。  
@@ -241,7 +241,7 @@ $ ssh-keygen -t rsa -C"{name@site.com}"    // 用你的邮箱替换{name@site.co
 点击右方的铅笔图标，把文件内容改成你购买的域名，比如 `www.awesome.com`，这样你就可以用自己的域名访问你的Github Pages啦！
 ![fork-06](http://img.blog.csdn.net/20160326174023709)
 
-# 写博客
+## 写博客
 
 ### 同步仓库
 
@@ -288,7 +288,7 @@ $ git push origin master
 
 到此你已经可以发表文章到你的个人博客啦！！如有更多需求，可以继续看下面的进阶部分。
 
-# 进阶：安装Jekyll本地编译环境
+## 进阶：安装Jekyll本地编译环境
 
 每次修改了本地文件，都要至少经过三个命令和服务器延迟刷新才能看到修改的效果，是不是有点疼？
 
@@ -397,14 +397,14 @@ $ tasklist /svc /FI "PID eq 6668"
 [搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)  
 [Jekyll中文文档](http://jekyll.bootcss.com/)
 
-# 进阶：添加评论、分享功能
+## 进阶：添加评论、分享功能
 
 常见的第三方评论系统有： [Disqus](https://disqus.com/)，[多说](http://dev.duoshuo.com/)。
 
 简单来说是在html文件中嵌入Javascript代码，注册网站后都有较好的指导，并不困难。
 
 
-# 扩展阅读
+## 扩展阅读
 [1][Github Pages](https://pages.github.com/)  
 [2][Git教程 - 廖雪峰](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)  
 [3][Jekyll中文文档](http://jekyll.bootcss.com/)  
