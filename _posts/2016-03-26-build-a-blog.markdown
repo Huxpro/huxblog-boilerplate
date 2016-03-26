@@ -2,7 +2,7 @@
 layout:     post
 title:      "Github Pages + Jekyll 独立博客一小时快速搭建&上线指南"
 subtitle:   "分享你的知识和观点"
-date:       2016-03-26
+date:       2016-03-26 21:00:00
 author:     "Bebop.C"
 header-img: "img/post-build-a-blog.jpg"
 tags:
@@ -26,6 +26,8 @@ tags:
 此篇攻略尽力做到清晰明了，但也必有不足之处，遇到问题欢迎大家多多留言交流提问(´・ω・)ﾉ。
 
 ---
+
+**版权声明：欢迎分享，转载请注明出处。**
 
 # 目录
 
@@ -411,4 +413,3 @@ tasklist /svc /FI "PID eq 6668"
 [6][使用Github Pages建独立博客](http://beiyuu.com/github-pages/)  
 [7][搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)
 
-欢迎分享，转载请注明出处。
