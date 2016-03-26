@@ -116,18 +116,18 @@ http://{username}.github.io         //用你的Github用户名替换网址中的
 大家可以自由选择域名注册商，这里介绍GoDaddy上的购买流程。
 
 进入[GoDaddy中文网站](https://sg.godaddy.com/zh/) （当然英文也可以），在搜索框输入一个霸气的名字，点击“域名搜索”。
-![buy-domain-01](http://7xsb7g.com1.z0.glb.clouddn.com/post-build-a-blog-buy-domain-01.JPG)
+![buy-domain-01](http://img.blog.csdn.net/20160326173353302)
 
 如果幸运的话，还没有人注册过这个域名。  
 我们只需购买一个 `.com` 域名即可，点击第一个“选择”，再点击“进入购物车”。
-![buy-domain-02](http://7xsb7g.com1.z0.glb.clouddn.com/post-build-a-blog-buy-domain-02.JPG)
+![buy-domain-02](http://img.blog.csdn.net/20160326173415233)
 
 出现GoDaddy的增值服务，我们不需要的话，直接点击右上角的“进入购物车”。
-![buy-domain-03](/img/in-post/post-build-a-blog/buy-domain-03.jpg)
+![buy-domain-03](http://img.blog.csdn.net/20160326173453781)
 
 到了购买页面，可以自由选择购买期限，默认两年，不同时间优惠不同。  
 注意这里右侧有个地方可以添加“促销码”，大家可以用搜索引擎找找，有很多可用的优惠，不同的促销码可能会对支付方式和年份等有所限制（无限制时可以使用支付宝、信用卡、银联银行卡等）。
-![buy-domain-04](/img/in-post/post-build-a-blog/buy-domain-04.jpg)
+![buy-domain-04](http://img.blog.csdn.net/20160326173512802)
 
 认真核对好购买项目和金额后，点击“去付款”，进行信息注册和结算。  
 **注意！邮箱名字很重要，后期激活和修改密码都必须通过邮箱，请确保无误，可不要让银子白白流走啊。**  
@@ -136,7 +136,7 @@ http://{username}.github.io         //用你的Github用户名替换网址中的
 ### 设置DNS
 
 重新登录你刚注册的帐号，点击右上角用户中心里的“我的产品”。
-![buy-domain-05](/img/in-post/post-build-a-blog/buy-domain-05.jpg)
+![buy-domain-05](http://img.blog.csdn.net/20160326173540927)
 
 此时已经可以看到我们购买的域名了。
 
@@ -144,20 +144,20 @@ http://{username}.github.io         //用你的Github用户名替换网址中的
 这里推荐使用 [DNSPod](https://www.dnspod.cn/) 的服务，稳定且免费。
 
 在“我的产品”界面找到刚才注册的域名，点击“管理DNS”。
-![buy-domain-06](/img/in-post/post-build-a-blog/buy-domain-06.jpg)
+![buy-domain-06](http://img.blog.csdn.net/20160326173556891)
 
 在“域名服务器” 处点击“管理”。
-![buy-domain-07](/img/in-post/post-build-a-blog/buy-domain-07.jpg)
+![buy-domain-07](http://img.blog.csdn.net/20160326173618318)
 
 按照下图设置好DNSPod的域名服务器。
-![buy-domain-08](/img/in-post/post-build-a-blog/buy-domain-08.jpg)
+![buy-domain-08](http://img.blog.csdn.net/20160326173632522)
 
 设置好后进入 [DNSPod](https://www.dnspod.cn/)  
 注册帐号后登录，进入“域名解析”，点击“添加域名”。
-![set-dns-01](/img/in-post/post-build-a-blog/set-dns-01.jpg)
+![set-dns-01](http://img.blog.csdn.net/20160326173650850)
 
 添加好之前购买的域名，点击你的域名进入记录管理。按照下图添加每条记录。
-![set-dns-02](/img/in-post/post-build-a-blog/set-dns-02.jpg)
+![set-dns-02](http://img.blog.csdn.net/20160326173714834)
 
 前两条A型记录值 `192.30.252.153` 和 `192.30.252.154` 是GitHub的服务器地址，可以在[这里](https://help.github.com/articles/troubleshooting-custom-domains/#dns-configuration-errors)查到。  
 NS类型记录是默认不可变的。  
@@ -172,7 +172,7 @@ Tip: 用你的Github用户名替换上面的 `{username}`
 ### 安装git for windows
 [进入下载页面](https://git-for-windows.github.io/)  
 安装好以后在开始菜单中找到Git Bash并打开。
-![setup-git](/img/in-post/post-build-a-blog/setup-git.jpg)
+![setup-git](http://img.blog.csdn.net/20160326173741565)
 
 在打开的命令行窗口（`Shell`）内执行以下命令，设置你的git用户名和邮箱：
 
@@ -195,12 +195,12 @@ $ ssh-keygen -t rsa -C"{name@site.com}"    // 用你的邮箱替换{name@site.co
 这时你的用户目录（win7以上系统默认在 `C:\Users\你的计算机用户名`）内会出现名为 `.ssh` 的文件夹，点进去能看到 `id_rsa` 和 `id_rsa.pub` 两个文件，其中 `id_rsa` 是私钥，不能让怪人拿走， `id_rsa.pub` 是公钥，无需保密（原理请自行参看密码学.............................................我相信你也不会看）。
 
 接下来用你的浏览器登录Github，点击右上角的“Settings”：
-![set-ssh-01](/img/in-post/post-build-a-blog/set-ssh-01.jpg)
+![set-ssh-01](http://img.blog.csdn.net/20160326173806394)
 
 用文字处理软件打开刚才的 `id_rsa.pub` 文件，复制全部内容。  
 点击“SSH Keys”，“Add SSH Key”，将复制的内容粘贴在Key中，点“Add Key”确定。
-![set-ssh-02](/img/in-post/post-build-a-blog/set-ssh-02.jpg)
-![set-ssh-03](/img/in-post/post-build-a-blog/set-ssh-03.jpg)
+![set-ssh-02](http://img.blog.csdn.net/20160326173821144)
+![set-ssh-03](http://img.blog.csdn.net/20160326173829850)
 
 至此SSH配置完毕。
 
@@ -216,16 +216,16 @@ $ ssh-keygen -t rsa -C"{name@site.com}"    // 用你的邮箱替换{name@site.co
 [Jekyll项目的wiki页面](https://github.com/jekyll/jekyll/wiki/sites)给出了大量优秀的风格各异的网站，这里以 Panxw's blog 为例讲解。
 
 进入wiki页，点击Panxw's blog右边的source链接，进入到作者的模版仓库。
-![fork-01](/img/in-post/post-build-a-blog/fork-01.jpg)
+![fork-01](http://img.blog.csdn.net/20160326173920458)
 
 点击右上角的“Fork”。
-![fork-02](/img/in-post/post-build-a-blog/fork-02.jpg)
+![fork-02](http://img.blog.csdn.net/20160326173933085)
 
 然后在你的主页里找到你刚才Fork的分支，点进去：
-![fork-03](/img/in-post/post-build-a-blog/fork-03.jpg)
+![fork-03](http://img.blog.csdn.net/20160326173943320)
 
 点击“Settings”，将“Repository name”改为 `{你的Github用户名}.github.io`，点击“Rename”。
-![fork-04](/img/in-post/post-build-a-blog/fork-04.jpg)
+![fork-04](http://img.blog.csdn.net/20160326173955662)
 
 此时你会发现已经可以通过 `http://{你的Github用户名}.github.io` 访问你fork下来的网站啦！
 
@@ -234,10 +234,10 @@ $ ssh-keygen -t rsa -C"{name@site.com}"    // 用你的邮箱替换{name@site.co
 接下来让你能用之前购买的域名来访问你的网站。
 
 在你的代码仓库中找到 `CNAME` 文件，点击它：
-![fork-05](/img/in-post/post-build-a-blog/fork-05.jpg)
+![fork-05](http://img.blog.csdn.net/20160326174010242)
 
 点击右方的铅笔图标，把文件内容改成你购买的域名，比如 `www.awesome.com`，这样你就可以用自己的域名访问你的Github Pages啦！
-![fork-06](/img/in-post/post-build-a-blog/fork-06.jpg)
+![fork-06](http://img.blog.csdn.net/20160326174023709)
 
 # 写博客
 
@@ -258,7 +258,7 @@ $ git clone https://github.com/{username}/{username}.github.io.git     // 用你
 ```
 
 结果如下：
-![clone](/img/in-post/post-build-a-blog/clone.jpg)
+![clone](http://img.blog.csdn.net/20160326174041711)
 
 这时所有远程仓库里的源码都拷贝到 `e:/workspace/{username}.github.io` 这个文件夹里来了。  
 Tip: 如果clone失败有可能是网络原因，可以过一个时段再试，或者寻找梯子。
@@ -298,10 +298,10 @@ $ git push origin master
 
 
 1.安装 [Ruby](http://rubyinstaller.org/downloads/)
-![install-ruby-01](/img/in-post/post-build-a-blog/install-ruby-01.jpg)
+![install-ruby-01](http://img.blog.csdn.net/20160326174105835)
 
 **注意：这里一定要勾选添加到环境变量PATH！**
-![install-ruby-02](/img/in-post/post-build-a-blog/install-ruby-02.jpg)
+![install-ruby-02](http://img.blog.csdn.net/20160326174117476)
 
 2.安装 [RubyGems](https://rubygems.org/pages/download)
 
@@ -369,7 +369,7 @@ $ netstat -ano
 ```
 
 可以看到如下进程与所占用端口的对应情况，找到本地地址为 `127.0.0.1:4000` 的记录，看到该条记录的PID为6668 (当然你的和我的不一样)。
-![jekyll-serve-fail-01](/img/in-post/post-build-a-blog/jekyll-serve-fail-01.jpg)
+![jekyll-serve-fail-01](http://img.blog.csdn.net/20160326174152852)
 
 输入命令
 
@@ -378,10 +378,10 @@ tasklist /svc /FI "PID eq 6668"
 ```
 
 该进程的名称就会显示出来:
-![jekyll-serve-fail-02](/img/in-post/post-build-a-blog/jekyll-serve-fail-02.jpg)
+![jekyll-serve-fail-02](http://img.blog.csdn.net/20160326174207587)
 
 打开windows的任务管理器，结束它：
-![jekyll-serve-fail-03](/img/in-post/post-build-a-blog/jekyll-serve-fail-03.jpg)
+![jekyll-serve-fail-03](http://img.blog.csdn.net/20160326174221211)
 
 再次运行 `jekyll serve` 就可以了。
 
@@ -402,7 +402,7 @@ tasklist /svc /FI "PID eq 6668"
 简单来说是在html文件中嵌入Javascript代码，注册网站后都有较好的指导，并不困难。
 
 
-# 扩展阅读：
+# 扩展阅读
 [1][Github Pages](https://pages.github.com/)  
 [2][Git教程 - 廖雪峰](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)  
 [3][Jekyll中文文档](http://jekyll.bootcss.com/)  
@@ -410,3 +410,5 @@ tasklist /svc /FI "PID eq 6668"
 [5][Ruby和Gem](http://blacktha.com/2015/07/06/tech/Ruby/)  
 [6][使用Github Pages建独立博客](http://beiyuu.com/github-pages/)  
 [7][搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)
+
+欢迎分享，转载请注明出处。
