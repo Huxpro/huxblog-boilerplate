@@ -345,8 +345,8 @@ Errno::ECONNRESET: An existing connection was forcibly closed by the remote host
 ```
 
 这时候有三种解决方法：
-1. 等天气好的时候再来
-2. 架梯子
+1. 等天气好的时候再来  
+2. 架梯子  
 3. 更换为[国内镜像服务器](https://ruby.taobao.org/)
 
 ### 开启本地实时预览
