@@ -376,7 +376,7 @@ $ netstat -ano
 输入命令
 
 ```
-tasklist /svc /FI "PID eq 6668"
+$ tasklist /svc /FI "PID eq 6668"
 ```
 
 该进程的名称就会显示出来:
