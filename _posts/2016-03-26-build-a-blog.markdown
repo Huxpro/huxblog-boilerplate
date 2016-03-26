@@ -51,7 +51,7 @@ Github是全球知名的使用Git系统的一个免费远程仓库（Repository�
 ### GitHub Pages
 
 托管在Github上的项目页面看上去往往是这样：
-![what-geek-say](/img/in-post/post-build-a-blog/what-geek-say.jpg)
+![what-geek-say](http://7xsb7g.com1.z0.glb.clouddn.com/post-build-a-blog-what-geek-say.jpg)
 <small class="img-hint">What does the geek say?!</small>
 
 对于非专业人士看到这样的页面有80%只能默默点叉了。
