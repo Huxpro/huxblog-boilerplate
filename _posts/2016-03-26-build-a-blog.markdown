@@ -51,7 +51,7 @@ Github是全球知名的使用Git系统的一个免费远程仓库（Repository�
 ### GitHub Pages
 
 托管在Github上的项目页面看上去往往是这样：
-![what-geek-say](http://7xsb7g.com1.z0.glb.clouddn.com/post-build-a-blog-what-geek-say.jpg)
+![what-geek-say](http://img.blog.csdn.net/20160326173234333)
 <small class="img-hint">What does the geek say?!</small>
 
 对于非专业人士看到这样的页面有80%只能默默点叉了。
@@ -59,7 +59,7 @@ Github是全球知名的使用Git系统的一个免费远程仓库（Repository�
 于是GitHub Pages诞生了。它是Github提供给托管项目的开发者一个更个性化展示自己项目的方法，使用GitHub Pages服务可以编写同样是托管在Github上的静态网页。
 
 比如上面Jekyll项目的GitHub Pages长成这样：
-![jekyll](http://7xsb7g.com1.z0.glb.clouddn.com/post-build-a-blog-jekyll.jpg)
+![jekyll](http://img.blog.csdn.net/20160326173317122)
 
 Github Pages分为用户、组织、项目三种网站，我们的Blog要用到的是 [User Pages site](https://help.github.com/articles/user-organization-and-project-pages/) ，即用户网站。
 
@@ -116,11 +116,11 @@ http://{username}.github.io         //用你的Github用户名替换网址中的
 大家可以自由选择域名注册商，这里介绍GoDaddy上的购买流程。
 
 进入[GoDaddy中文网站](https://sg.godaddy.com/zh/) （当然英文也可以），在搜索框输入一个霸气的名字，点击“域名搜索”。
-![buy-domain-01](/img/in-post/post-build-a-blog/buy-domain-01.jpg)
+![buy-domain-01](http://7xsb7g.com1.z0.glb.clouddn.com/post-build-a-blog-buy-domain-01.JPG)
 
 如果幸运的话，还没有人注册过这个域名。  
 我们只需购买一个 `.com` 域名即可，点击第一个“选择”，再点击“进入购物车”。
-![buy-domain-02](/img/in-post/post-build-a-blog/buy-domain-02.jpg)
+![buy-domain-02](http://7xsb7g.com1.z0.glb.clouddn.com/post-build-a-blog-buy-domain-02.JPG)
 
 出现GoDaddy的增值服务，我们不需要的话，直接点击右上角的“进入购物车”。
 ![buy-domain-03](/img/in-post/post-build-a-blog/buy-domain-03.jpg)
