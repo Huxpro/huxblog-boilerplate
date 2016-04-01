@@ -1,12 +1,6 @@
 # Bobop.C Blog
 
-###[http://www.playingfingers.com](http://www.playingfingers.com)
-
-
-## Features
-
-- Underconstruction
-- Coming soon...
+###[http://playingfingers.com](http://playingfingers.com)
 
 
 ## Thanks
