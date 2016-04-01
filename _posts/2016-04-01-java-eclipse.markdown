@@ -57,7 +57,7 @@ tags:
 java -version
 ```
 看到以下版本信息
-![java-version](img/in-post/post-java-eclipse/java-version.jpg)
+![java-version](/img/in-post/post-java-eclipse/java-version.jpg)
 
 2.再输入命令:
 
@@ -65,7 +65,7 @@ java -version
 javac
 ```
 出现以下javac命令使用方法介绍
-![javac](img/in-post/post-java-eclipse/javac.jpg)
+![javac](/img/in-post/post-java-eclipse/javac.jpg)
 
 恭喜配置成功。如果不成功，请查验自己的环境变量是否正确配置。
 
