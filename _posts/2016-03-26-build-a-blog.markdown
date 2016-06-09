@@ -347,7 +347,9 @@ Errno::ECONNRESET: An existing connection was forcibly closed by the remote host
 这时候有三种解决方法：  
 1. 等天气好的时候再来  
 2. 架梯子  
-3. 更换为[国内镜像服务器](https://ruby.taobao.org/)
+3. [推荐] 更换为[Ruby China](https://gems.ruby-china.org/)源，点进去会有详细的设置方法。（感谢 @mortred 博友提醒淘宝源已不可用，建议使用Ruby China的源，上不去的话换个时间就好。）
+
+
 
 ### 开启本地实时预览
 
