@@ -46,9 +46,7 @@
 #### Environment
 
 如果你安装了jekyll，那你只需要在命令行输入`jekyll serve`就能在本地浏览器预览主题。你还可以输入`jekyll serve --watch`，这样可以边修改边自动运行修改后的文件。
-
-经 [@BrucZhaoR](https://github.com/BruceZhaoR)的测试，好像两个命令都是可以的自动运行修改后的文件的，刷新后可以实时预览。官方文件是建议安装bundler，这样你在本地的效果就跟在github上面是一样的。详情请见这里：https://help.github.com/articles/using-jekyll-with-pages/#installing-jekyll
-
+如果没有安装jekyll, 可以用官方建议安装的bundler进行安装，直接输入`bundle install`来安装jekyll及其所有插件
 
 #### Get Started
 
