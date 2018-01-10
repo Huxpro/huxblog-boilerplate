@@ -68,7 +68,7 @@ ga_domain:
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "自视颇高,然高不成,低不就,终无所成也。"
+sidebar-about-description: "懒人一枚。"
 sidebar-avatar: /img/my_icon.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -86,6 +86,6 @@ friends: [
         href: "http://huangxuan.me"
     },{
         title: "Lanvsblue",
-        href: "lanvsblue.top"
+        href: "www.lanvsblue.top"
     }
 ]
