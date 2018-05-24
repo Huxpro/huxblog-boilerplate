@@ -26,7 +26,7 @@ tags:
 ## Catalog
 
 
-1.  [CommonJS & Node](#commonjs--node)
+1.  [CommonJS & Node](#commonjs-&-node)
 3.  [History](#history)
 4.  [RequireJS & AMD](#requirejs--amd)
 5.  [SeaJS & CMD](#seajs--cmd)
