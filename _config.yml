@@ -14,7 +14,7 @@ baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 RSS: false
 # weibo_username:     huxpro
 zhihu_username:     jamie-44-60
-github_username:    jamie98@vip.qq.com
+github_username:    SirJamie
 # twitter_username:  huxpro
 # facebook_username:  huxpro
 
@@ -61,8 +61,8 @@ kramdown:
 # Baidu Analytics
 # ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 # Google Analytics
-# ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-# ga_domain: huangxuan.me
+ga_track_id: 'UA-16683635-1'            # Format: UA-xxxxxx-xx
+ga_domain: huangxuan.me
 
 
 
