@@ -2,7 +2,7 @@
 layout:     post
 title:      "Example Post"
 subtitle:   "不适合人类阅读，非常水的测试文档"
-date:       2019-02-18
+date:       2019-02-08
 author:     "SirJamie"
 header-img: "img/post-bg-unix-linux.jpg"
 tags:
