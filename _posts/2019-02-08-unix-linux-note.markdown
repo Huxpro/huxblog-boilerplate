@@ -1,9 +1,9 @@
 ---
 layout:     post
 title:      "Example Post"
-subtitle:   "不适合人类阅读，非常水的自我笔记"
-date:       2015-04-14
-author:     "Hux"
+subtitle:   "不适合人类阅读，非常水的测试文档"
+date:       2019-02-18
+author:     "SirJamie"
 header-img: "img/post-bg-unix-linux.jpg"
 tags:
     - OS

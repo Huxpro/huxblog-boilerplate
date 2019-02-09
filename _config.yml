@@ -1,10 +1,10 @@
 # Site settings
-title: Jamie Blog
-SEOTitle: SirJamie的博客 | Jamie Blog
+title: SirJamie Blog
+SEOTitle: SirJamie的博客 | SirJamie Blog
 header-img: img/home-bg.jpg
 email: SirJamie@qq.com
 description: "No Pain, No Gain"
-keyword: "SirJamie, Jamie Blog, SirJamie的博客, C++, ROS, SLAM"
+keyword: "SirJamie, SirJamie Blog, SirJamie的博客, C++, ROS, SLAM"
 url: "https://sirjamie.github.io"              # your host, for absolute URL
 baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
