@@ -26,7 +26,7 @@ tags:
 
 ## RTAB-Map
 
-[RTAB-Map](http://introlab.github.io/rtabmap/)，提供一个完整的建图导航方案，包括对于视觉输入，轮里程计，lidar三种输入的多种组合方式的解决方案。[文档教程](http://wiki.ros.org/rtabmap_ros)齐全丰富，github和[论坛](http://official-rtab-map-forum.67519.x6.nabble.com/)中也有较多案例和配置，请一定要看！能解决非常多的问题和疑惑。
+[RTAB-Map](http://introlab.github.io/rtabmap/)，提供一个完整的建图导航方案，包括对于视觉输入，轮里程计，lidar三种输入的多种组合方式的解决方案。[文档和教程](http://wiki.ros.org/rtabmap_ros)齐全丰富，[GitHub](https://github.com/introlab/rtabmap_ros/tree/kinetic-devel)，[论坛](http://official-rtab-map-forum.67519.x6.nabble.com/)中也有较多案例和配置，请一定要看！能解决非常多的问题和疑惑。
 
 
 ---
@@ -93,7 +93,7 @@ roslaunch rtabmap_ros rgbd_mapping.launch rtabmap_args:="--delete_db_on_start" r
 
 ## 后记
 
-本机器人目前只使用了Kinect2一个设备，可以完成建图和导航。但是视觉里程计的精确度和实时性(Kinect2深度转换为雷达大概只能达到2Hz)本来就无法和odom相比。我认为雷达+odom才是室内环境中最好的选择。视觉里程计更适合户外轮子打滑导致odom可信度极低的场景。
+本机器人目前只使用了Kinect2一个设备，开发版选用了tx2，性能不错，可以比较流畅得完成建图和导航。但是视觉里程计的精确度和实时性(Kinect2深度转换为雷达大概只能达到2Hz)本来就无法和odom相比。我认为雷达+odom才是室内环境中最好的选择。视觉里程计更适合户外轮子打滑导致odom可信度极低的场景。
 
 
 ---
