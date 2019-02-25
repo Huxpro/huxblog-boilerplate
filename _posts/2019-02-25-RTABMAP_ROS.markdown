@@ -17,7 +17,7 @@ tags:
 ## Catagory
 
 1. [算法选择](#算法选择)
-2. [RTAB-Map](#RTAB-Map)
+2. [RTAB-Map](#rtab-map)
 3. [建图](#建图)
 4. [导航](#导航)
 5. [move_base](#move_base)
@@ -57,7 +57,7 @@ static tf
 mapping 
 >roslaunch rtabmap_ros rgbd_mapping.launch rtabmap_args:="--delete_db_on_start" rgb_topic:=/kinect2/sd/image_color_rect depth_registered_topic:=/kinect2/sd/image_depth_rect camera_info_topic:=/kinect2/sd/camera_info
 
-**注**
+**注:**
 如果使用的是qhd或者hd, 那么对应的frame 是 kinect2_rgb_optical_frame, hd和qhd的尺寸图像都是基于rgd镜头的,所以它们的frame是彩色镜头的frame。而如果使用的是sd, 那么对应的frame是　kinect2_ir_optical_frame, 红外镜头的frame。
 
 建完之后，ctrl+c退出，即可在 ～/.ros 文件夹下看到 一个db文件。
@@ -73,7 +73,7 @@ mapping
 
 导航部分是选择这个算法的重要原因。**SVO**的**ROS**包提供其作为VO节点的输出，配合[robot_pose_efk](http://wiki.ros.org/robot_pose_ekf),理论上可以使用gmapping算法，有兴趣的朋友可以尝试一下。
 
-进行导航其实是用 rtabmap 的投影地图或者是scan地图来作为 move_base 的地图输入，然后利用 Navigation Stack 进行路径规划等，最后发布/cmd_vel节点。而对于/cmd_vel，最好进行一个平滑处理，使机器人运行流畅。
+进行导航其实是用**RTAB-Map**的投影地图或者是scan地图来作为move_base的地图输入，然后利用Navigation Stack进行路径规划等，最后发布/cmd_vel节点。而对于/cmd_vel，最好进行一个平滑处理，使机器人运行流畅。
 
 navigation
 >roslaunch rtabmap_ros rgbd_mapping.launch localization:=true rgb_topic:=/kinect2/sd/image_color_rect depth_registered_topic:=/kinect2/sd/image_depth_rect camera_info_topic:=/kinect2/sd/camera_info
