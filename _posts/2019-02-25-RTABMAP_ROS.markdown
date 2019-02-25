@@ -14,6 +14,18 @@ tags:
 > 记录一下，写写流水账。写得不对的地方请指出，谢谢！
 
 
+## Catagory
+
+1. [算法选择](#算法选择)
+2. [RTAB-Map](#RTAB-Map)
+3. [建图](#建图)
+4. [导航](#导航)
+5. [move_base](#move_base)
+6. [配置文件](#配置文件)
+7. [后记](#后记)
+8. [参考博文](#参考博文)
+
+
 ---
 
 ## 算法选择
@@ -36,12 +48,14 @@ tags:
 相对简单的部分，启动相机(Kincect2的玄学启动真的是服了)，将**RTAB-Map**启动文件的参数对应为相机的rgb输入，深度输入和camera_info,同时记得配置一下tf转换树(这里的tf树只是为了测试方便)，
 rtabmap_args:="--delete_db_on_start"的含义是删除掉之前储存的 db 文件，重新建图。
 
->// kinect2 bridge
+kinect2 bridge
 >roslaunch kinect2_bridge kinect2_bridge.launch pulish_tf:=true 
->// static tf
+
+static tf
 >rosrun tf static_transform_publisher 0 0 0 -1.5707963267948966 0 -1.5707963267948966 camera_link kinect2_ir_optical_frame  100 
->// mapping 
-roslaunch rtabmap_ros rgbd_mapping.launch rtabmap_args:="--delete_db_on_start" rgb_topic:=/kinect2/sd/image_color_rect depth_registered_topic:=/kinect2/sd/image_depth_rect camera_info_topic:=/kinect2/sd/camera_info
+
+mapping 
+>roslaunch rtabmap_ros rgbd_mapping.launch rtabmap_args:="--delete_db_on_start" rgb_topic:=/kinect2/sd/image_color_rect depth_registered_topic:=/kinect2/sd/image_depth_rect camera_info_topic:=/kinect2/sd/camera_info
 
 **注**
 如果使用的是qhd或者hd, 那么对应的frame 是 kinect2_rgb_optical_frame, hd和qhd的尺寸图像都是基于rgd镜头的,所以它们的frame是彩色镜头的frame。而如果使用的是sd, 那么对应的frame是　kinect2_ir_optical_frame, 红外镜头的frame。
@@ -61,7 +75,7 @@ roslaunch rtabmap_ros rgbd_mapping.launch rtabmap_args:="--delete_db_on_start" r
 
 进行导航其实是用 rtabmap 的投影地图或者是scan地图来作为 move_base 的地图输入，然后利用 Navigation Stack 进行路径规划等，最后发布/cmd_vel节点。而对于/cmd_vel，最好进行一个平滑处理，使机器人运行流畅。
 
->// navigation
+navigation
 >roslaunch rtabmap_ros rgbd_mapping.launch localization:=true rgb_topic:=/kinect2/sd/image_color_rect depth_registered_topic:=/kinect2/sd/image_depth_rect camera_info_topic:=/kinect2/sd/camera_info
 
 启动**RTAB-Map**后，还要启动move_base进行路径规划等(启动文件在后面)。
@@ -82,7 +96,7 @@ roslaunch rtabmap_ros rgbd_mapping.launch rtabmap_args:="--delete_db_on_start" r
 
 ---
 
-## Launch文件
+## 配置文件
 
 话不多说，ROS最关键的就是launch文件，大量的参数配置都在其中。下面放上我的launch文件和yaml文件供大家参考。
 
@@ -101,4 +115,5 @@ roslaunch rtabmap_ros rgbd_mapping.launch rtabmap_args:="--delete_db_on_start" r
 ## 参考博文
 
 [rtabmap_ros 从入门到放弃 + 使用Handsfree进行三维建图导航](https://www.rosclub.cn/thread-25.html)
+
 [rtabmap_ros 使用 kinect2(xbox one)进行SLAM](https://blog.csdn.net/sean_xyz/article/details/65445038)
