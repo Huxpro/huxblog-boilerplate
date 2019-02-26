@@ -4,7 +4,7 @@ title:      "ROS小车开发之RTAB-Map的实践"
 subtitle:   "基于Kinect2的纯视觉建图和导航"
 date:       2019-02-25
 author:     "SirJamie"
-header-img: "img/post-bg-unix-linux.jpg"
+header-img: "img/post-bg-alita.jpg"
 tags:
     - ROS
     - SLAM
@@ -87,7 +87,7 @@ navigation
 
 ## move_base
 
-主要是用途是路径规划吧。**RTAB_Map**无法导航，与网上所诉不符才发现是move_base配置不对。以前一直没有关注这个模块，并错误的认为路径规划已经写在来**RTAB_Map**中。
+主要是用途是路径规划吧。发现在rviz中画goal却无法导航，才发现是move_base配置不对。以前一直没有关注这个模块，并错误的认为路径规划已经写在了**RTAB_Map**中。
 
 配置文件来自[Autonomous Navigation](http://official-rtab-map-forum.67519.x6.nabble.com/Autonomous-Navigation-td801.html)。这篇帖子内容多多，精华！
 

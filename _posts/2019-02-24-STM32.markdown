@@ -1,0 +1,73 @@
+---
+layout:     post
+title:      "ROS小车开发之底盘控制"
+subtitle:   "stm32+步进电机+麦克纳姆轮"
+date:       2019-02-24
+author:     "SirJamie"
+header-img: "img/post-bg-bloodborne.jpg"
+tags:
+    - ROS
+    - STM32
+    - Linux
+---
+
+> 记录一下，写写流水账。写得不对的地方请指出，谢谢！
+
+
+## Catagory
+
+1. [正逆解运动学](#正逆解运动学)
+2. [上位机程序](#上位机程序)
+3. [下位机程序](#下位机程序)
+
+
+---
+
+## 正逆解运动学
+
+原理就不赘述了，有兴趣的可以看看这几篇博文[麦轮正逆向运动学建模](https://bbs.robomaster.com/thread-3960-1-1.html)，[麦克纳姆轮浅谈](https://zhuanlan.zhihu.com/p/20282234)。我这里就直接上结论了。
+
+**正向运动学**
+WHEEL_SEPARATION_WIDTH = DISTANCE_LEFT_TO_RIGHT_WHEEL / 2
+
+WHEEL_SEPARATION_LENGTH = DISTANCE_FRONT_TO_REAR_WHEEL / 2
+
+wheel_front_left = (1/WHEEL_RADIUS) * (linear.x – linear.y – (WHEEL_SEPARATION_WIDTH + WHEEL_SEPARATION_LENGTH)*angular.z);
+
+wheel_front_right = (1/WHEEL_RADIUS) * (linear.x + linear.y + (WHEEL_SEPARATION_WIDTH + WHEEL_SEPARATION_LENGTH)*angular.z);
+
+wheel_rear_left = (1/WHEEL_RADIUS) * (linear.x + linear.y – (WHEEL_SEPARATION_WIDTH + WHEEL_SEPARATION_LENGTH)*angular.z);
+
+wheel_rear_right = (1/WHEEL_RADIUS) * (linear.x – linear.y + (WHEEL_SEPARATION_WIDTH + WHEEL_SEPARATION_LENGTH)*angular.z);
+
+对于麦克纳姆轮的不同安装方式，输出其实就差了一个负号。
+wheel_front_right = -1 * wheel_front_right
+
+wheel_rear_right = -1 * wheel_rear_right
+
+输出的单位是rad/s。
+
+**逆向运动学**
+inear.x = (wheel_front_left + wheel_front_right + wheel_rear_left + wheel_rear_right) * (WHEEL_RADIUS/4)
+
+linear.y = ( -wheel_front_left + wheel_front_right + wheel_rear_left – wheel_rear_right) * (WHEEL_RADIUS/4)
+
+angular.z = ( -wheel_front_left + wheel_front_right – wheel_rear_left + wheel_rear_right) * (WHEEL_RADIUS/(4 * (WHEEL_SEPARATION_WIDTH + WHEEL_SEPARATION_LENGTH)))
+
+---
+
+## 上位机程序
+
+写在运行**ROS**的计算机或者开发版上。主要由两个包组成，一个是用于键盘输入和输出 geometry_msgs/Twist 类型数据的teletop_twist， 另一个是用于控制电机的base_control，通过串口向下位机。 下面贴上我的源代码供大家参考。
+
+
+
+---
+
+# 下位机程序
+
+写在STM32上的程序，接受上位机的信息，并返回odom数据（有里程计的话）。下面贴出下位机程序供大家参考。
+
+
+---
+
