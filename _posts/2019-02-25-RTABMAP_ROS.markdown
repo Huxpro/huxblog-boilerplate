@@ -382,7 +382,7 @@ plugins:
 </launch>
 ```
 
-*** rgbd_rviz.launch ***
+***rgbd_rviz.launch***
 ```xml
 <launch>
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rtabmap_ros)/launch/config/turtlebot_navigation.rviz"/>
