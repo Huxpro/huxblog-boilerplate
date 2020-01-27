@@ -1,9 +1,9 @@
 # Site settings
-title: Ming. H's Blog
-SEOTitle: Ming的博客 | Your Blog
+title: As good as water
+SEOTitle: Ming的博客 | As good as Water
 header-img: img/home-bg.jpg
 email: mh3429@drexel.edu
-description: "as good as water"
+description: "Ming's Blog"
 keyword: "Note"
 url: "http://styxhuang.github.io"              # your host, for absolute URL
 #baseurl: "/huxblog-boilerplate"         # for example, '/blog' if your blog hosted on 'host/blog'
@@ -69,7 +69,7 @@ ba_track_id: edd66a6de508c063c2ef85382e1c8fa9
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "写写代码，看看书。世界那么大，多玩玩看看。"
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/sunrise-1.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
