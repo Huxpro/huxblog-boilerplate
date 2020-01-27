@@ -123,7 +123,7 @@ featured-condition-size: 1     # A tag will be featured if the size of it is mor
 
 唯一需要注意的是`featured-condition-size`: A tag will be featured if the size of it is more than this condition value. （也不知道Hux是想表达什么意思，请作者解答）
  
-内部有一个条件模板 `{% if tag[1].size > {{site.featured-condition-size}} %}` 是用来做筛选过滤的.
+#内部有一个条件模板 `{% if tag[1].size > {{site.featured-condition-size}} %}` 是用来做筛选过滤的.
 
 
 #### Friends
@@ -204,7 +204,7 @@ ga_domain: huangxuan.me
 
 如果你喜欢折腾，你可以去自定义我的这个模板的code，[Grunt](gruntjs.com)的环境已经搭好了。（非常感谢Clean Blog这个模板）
 
-There are a number of tasks it performs like minification of the JavaScript, compiling of the LESS files, adding banners to keep the Apache 2.0 license intact, and watching for changes. Run the grunt default task by entering `grunt ` into your command line which will build the files. You can use `grunt watch` if you are working on the JavaScript or the LESS.
+#There are a number of tasks it performs like minification of the JavaScript, compiling of the LESS files, adding banners to keep the Apache 2.0 license intact, and watching for changes. Run the grunt default task by entering `grunt ` into your command line which will build the files. You can use `grunt watch` if you are working on the JavaScript or the LESS.
 
 **Try to understand code in `_include/` and `_layouts/`, then you can modify Jekyll [Liquid](https://github.com/Shopify/liquid/wiki) template directly to do more creative customization.**
 
@@ -229,6 +229,3 @@ There are a number of tasks it performs like minification of the JavaScript, com
 2. 感谢[@BrucZhaoR](https://github.com/BruceZhaoR)的中文翻译 
 
 3. 感谢 Jekyll、Github Pages 和 Bootstrap!
-
-
-
