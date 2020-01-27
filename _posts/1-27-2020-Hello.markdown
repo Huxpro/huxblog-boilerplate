@@ -2,7 +2,7 @@
 layout:     post
 title:      "Welcome to Hux Blog"
 subtitle:   " \"Hello World, Hello Blog\""
-date:       2020-01-27
+date:       2020-01-27 12:00:00
 author:     "Ming Huang"
 header-img: "img/sunrise-1.jpg"
 tags:
