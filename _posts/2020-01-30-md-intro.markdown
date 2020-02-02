@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "Molecular Dynamic Simulation"
-subtitle:   "分子动力学"
+title:      "分子动力学"
+subtitle:   "Molecular Dynamic Simulation"
 date:       2020-01-30 12:00:00
 author:     "Ming Huang"
 header-img: "img/sunrise-01.jpg"
@@ -23,6 +23,3 @@ tags:
   
   目前的我在Drexel Univ继续化工的Ph.D. 研究领域换成了网状结构高分子材料性能的研究。
   以上研究涉及到了蛋白质，高分子，流体领域，最后的结果就是每个领域我都懂一点，但是都不太精通。现在有一点点时间了，在这里总结一下自己的经验，然后留下一点点东西。在论坛上和群里都看到了好多牛人，我实在是比不了，毕竟自己能力还是有限的。唯一能做的就是把自己失败和成功的经验告诉给大家，帮助其他人少走些弯路就好啦。
-
-    —— Ming 1/30/2020
-
