@@ -1,13 +1,13 @@
----
-layout:     post
-title:      "简历"
-subtitle:   " CV"
-date:       2020-01-27 12:00:00
-author:     "Ming Huang"
-header-img: "img/sunrise-01.jpg"
-tags:
-    - me
----
+#---
+#layout:     post
+#title:      "简历"
+#subtitle:   " CV"
+#date:       2020-01-27 12:00:00
+#author:     "Ming Huang"
+#header-img: "img/sunrise-01.jpg"
+#tags:
+#    - me
+#---
 ## Ming Huang
 - Email: mh3429@drexel.edu
 
