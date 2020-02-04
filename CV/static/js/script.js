@@ -57,16 +57,19 @@ jQuery(document).ready(function($) {
     });
 
     $('.info-unit ul li').hover(function() {
+        return;
         /* Stuff to do when the mouse enters the element */
-        $(this).children('.item-remove').css('visibility', 'visible');
+    //    $(this).children('.item-remove').css('visibility', 'visible');
 
     }, function() {
+        return;
         /* Stuff to do when the mouse leaves the element */
-        $(this).children('.item-remove').css('visibility', 'hidden');
+    //    $(this).children('.item-remove').css('visibility', 'hidden');
     });
 
     $('.unit-remove').click(function(event) {
-        $(this).closest(".info-unit").remove();
+        return;
+    //    $(this).closest(".info-unit").remove();
     });
 
     $('.item-remove').click(function(event) {
@@ -81,7 +84,7 @@ jQuery(document).ready(function($) {
     //        var list = unit.children('ul');
     //       var clone = list.children('li:first-child').clone(true);
     //        list.append(clone);
-        }
+    //    }
 
     });
     $("progress").click(function(event) {
