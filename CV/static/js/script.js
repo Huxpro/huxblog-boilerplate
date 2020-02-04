@@ -70,15 +70,17 @@ jQuery(document).ready(function($) {
     });
 
     $('.item-remove').click(function(event) {
-        $(this).closest("li").remove();
+        return;
+        //    $(this).closest("li").remove();
     });
 
     $('.item-add').click(function(event) {
-        var unit = $(this).closest(".info-unit");
-        if (unit.children('ul')){
-            var list = unit.children('ul');
-            var clone = list.children('li:first-child').clone(true);
-            list.append(clone);
+        return;
+    //    var unit = $(this).closest(".info-unit");
+    //   if (unit.children('ul')){
+    //        var list = unit.children('ul');
+    //       var clone = list.children('li:first-child').clone(true);
+    //        list.append(clone);
         }
 
     });
