@@ -1,0 +1,45 @@
+---
+layout:     post
+title:      "GROMACS 安装"
+subtitle:   "Pre-request on Molecular Dynamics Simulation"
+date:       2020-02-08 12:00:00
+author:     "Ming Huang"
+header-img: "img/sunrise-01.jpg"
+tags:
+    - Molecular Dynamic Simulation
+    - GROMACS
+---
+
+## 前言
+
+分子动力学模拟了一个神奇的世界，而动力学模拟软件就是驱动那个世界的核心
+
+## 正文
+
+分子模拟分为动力学模拟和蒙特卡罗模拟。虽然硕士阶段在上统计热力学课的时候做过用蒙特卡洛模拟2D Ising Model。但是这么多年不做，大部分都还给老师了。现在主研的是动力学模拟，以后还是以动力学模拟为主。
+
+分子动力学模拟其核心就是牛顿第二定律。体系中的任意原子，无时无刻都是在各种力的作用下。而牛顿第二定律就可以利用这些作用力来预测下一个时刻（$\delta$t）原子的位置。在不断的迭代这种计算之后就可以得到原子一段时间的运动轨迹。而这一过程的原子，原子之间的作用力，能量变化都是可以计算的。再结合一些经典的统计热力学的公式，就可以获得体系很多的性质。而这些体系是可以提供远比真实实验更多的结构细节。当然分子模拟能提供的分析远远多于此。
+
+### GROMACS
+GROMACS 是一款开源的动力学软件，整体安装过程也比较简单。
+1. Ubuntu 系统可以使用`sudo apt-get install gromacs`快速简便的安装, 目前默认的安装版本为2018.1。这种安装方式我记得是没有GPU支持的（如果错了请告知）
+* 在开始安装之前需要检查软件的pre-request是否满足
+> apt-cache gromacs
+2. 通过源码安装GROMACS ([Dirty installation](http://manual.gromacs.org/documentation/2020/install-guide/index.html "Dirty installation"))
+* 保证C和C++更新到最新版本， CMake > 3.9.6
+* [这里](http://manual.gromacs.org/documentation/ "这里")选择所需要的版本的源代码，下载到指定文件夹
+* 到指定用户文件夹解压安装文件，用以下步骤进行安装
+> tar -zxvf gromacs-2020.tar.gz
+> cd gromacs-2020
+> mkdir build
+> cd build
+* 如果需要多核处理，在下面命令之后加入`-DGMX_MPI=ON`。GPU `-DGMX_GPU=on`, 这个需要使用`nvcc`检测电脑是否正确安装了NVIDIA 显卡驱动。
+> cmake .. -DGMX_BUILD_OWN_FFTW=ON -DREGRESSIONTEST_DOWNLOAD=ON
+> make -j32
+> make check
+> sudo make install
+> source /usr/local/gromacs/bin/GMXRC
+在顺利完成以上命令之后，GROMACS已经顺利安装到电脑上。可以使用`gmx_mpi -v` 测试是否正确安装了GROMACS
+
+
+
