@@ -58,7 +58,7 @@ angular.z = ( -wheel_front_left + wheel_front_right – wheel_rear_left + wheel_
 
 ## 上位机程序
 
-写在运行**ROS**的计算机或者开发版上。主要由两个包组成，一个是用于键盘输入和输出 geometry_msgs/Twist 类型数据的teletop_twist， 另一个是用于控制电机的base_control，通过串口向下位机。 下面贴上我的源代码供大家参考。
+写在运行**ROS**的计算机或者开发版上。主要由两个包组成，一个是用于键盘输入和输出 geometry_msgs/Twist 类型数据的teletop_twist， 另一个是用于控制电机的base_control，通过串口向下位机。 ~~下面贴上我的源代码供大家参考。~~
 
 
 
@@ -66,7 +66,7 @@ angular.z = ( -wheel_front_left + wheel_front_right – wheel_rear_left + wheel_
 
 # 下位机程序
 
-写在STM32上的程序，接受上位机的信息，并返回odom数据（有里程计的话）。下面贴出下位机程序供大家参考。
+写在STM32上的程序，接受上位机的信息，并返回odom数据（有里程计的话）。~~下面贴出下位机程序供大家参考。~~
 
 
 ---
