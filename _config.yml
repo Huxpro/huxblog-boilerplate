@@ -82,9 +82,6 @@ featured-condition-size: 0              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "Hash's Blog",
-        href: "http://www.mypromises.xyz/"
-    },{
         title: "惟木匠心",
         href: "http://woodencube.us/"
         
