@@ -158,14 +158,13 @@ layout: default
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 <script type="text/javascript">
       var gitalk = new Gitalk({
-        id: '{{ .Date }}',
-        title: '{{ .Title }}',
+        id: window.location.pathname,
         clientID: '7b7611a89d89ba23c457',
         clientSecret: '813ba010301c17d271af3ef9b6ff8336452935b7',
         repo: 'sirjamie.github.io',
         owner: 'sirjamie',
         admin: ['sirjamie'],
-        body: decodeURI(location.href),
+        distractionFreeMode: false
       });
       gitalk.render('gitalk-container');
  </script>
