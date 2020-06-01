@@ -159,11 +159,11 @@ layout: default
 <script type="text/javascript">
       var gitalk = new Gitalk({
         id: window.location.pathname,
-        clientID: '7b7611a89d89ba23c457',
-        clientSecret: '813ba010301c17d271af3ef9b6ff8336452935b7',
-        repo: 'sirjamie.github.io',
-        owner: 'sirjamie',
-        admin: ['sirjamie'],
+        clientID: '{ {site.gitalk_clientId} }',
+        clientSecret: '{ {site.gitalk_clientSecret} }',
+        repo: '{ {site.gitalk_repo} }',
+        owner: '{ {site.github_username} }',
+        admin: ['{ {site.github_username} }'],
         distractionFreeMode: false
       });
       gitalk.render('gitalk-container');
