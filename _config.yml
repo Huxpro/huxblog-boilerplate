@@ -61,8 +61,8 @@ kramdown:
 # Baidu Analytics
 ba_track_id: 72f2e589c2113b26fb3c01f6cc1d2f60
 # Google Analytics
-ga_track_id: 'UA-16683635-1'            # Format: UA-xxxxxx-xx
-ga_domain: auto
+# ga_track_id: 'UA-16683635-1'            # Format: UA-xxxxxx-xx
+# ga_domain: auto
 
 # 评论系统：Gitalk(https://github.com/gitalk/gitalk)
 gitalk:
