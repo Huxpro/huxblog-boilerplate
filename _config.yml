@@ -54,25 +54,19 @@ kramdown:
 # Share component is depend on Comment so we can NOT use share only.
 # duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
-
+# gitalk settings
+gitalk_clientId: 7b7611a89d89ba23c457
+gitalk_clientSecret: 2f27ef825738b8ff4664fd4219f14741e6e43d9e
+gitalk_repo: sirjamie.github.io
+github_username: sirjamie
 
 
 # Analytics settings
 # Baidu Analytics
 ba_track_id: 72f2e589c2113b26fb3c01f6cc1d2f60
 # Google Analytics
-# ga_track_id: 'UA-16683635-1'            # Format: UA-xxxxxx-xx
-# ga_domain: auto
-
-# 评论系统：Gitalk(https://github.com/gitalk/gitalk)
-gitalk:
-  enable: true #是否开启Gitalk评论
-  clientID: 7b7611a89d89ba23c457 #生成的clientID
-  clientSecret: 2f27ef825738b8ff4664fd4219f14741e6e43d9e #生成的clientSecret
-  repo: sirjamie.github.io #仓库名称
-  owner: sirjamie #github用户名
-  admin: sirjamie
-  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+ga_track_id: 'UA-16683635-1'            # Format: UA-xxxxxx-xx
+ga_domain: auto
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
