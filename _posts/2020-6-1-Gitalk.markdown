@@ -27,7 +27,7 @@ tags:
 ## 调用Gitalk
 
 因为是在页面底部添加评论区，所以打开```_layouts/post.html```,在“合适”的地方(比如``duoshuo``代码附近)插入如下代码块：
-```js
+```xml
 <!--gitalk js code start-->
 <div id="gitalk-container"></div>
 </div>
@@ -48,7 +48,7 @@ tags:
 <!--gitalk js code end-->
 ```
 
-注意类似``clientID: '{{site.gitalk_clientId}}'``处的``{{}}``没有空格！否则会出现``Error: Validation Failed``的错误。
+注意类似**clientID: '{{site.gitalk_clientId}}**处的**{{}}**没有空格！否则会出现``Error: Validation Failed``的错误。
 
 然后打开``_config.yml``,插入如下代码段：
 ```yml
