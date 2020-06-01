@@ -6,7 +6,7 @@ date:       2019-02-03 10:00:00
 author:     "SirJamie"
 header-img: "img/head-post/post-bg-2019.jpg"
 tags:
-    - 生活
+    - Life
 ---
 
 > “Yeah It's on. ”
