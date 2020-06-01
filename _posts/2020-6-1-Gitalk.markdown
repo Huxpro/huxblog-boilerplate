@@ -27,7 +27,7 @@ tags:
 ## 调用Gitalk
 
 因为是在页面底部添加评论区，所以打开```_layouts/post.html```,在“合适”的地方(比如``duoshuo``代码附近)插入如下代码块：
-```
+```js
 <!--gitalk js code start-->
 <div id="gitalk-container"></div>
 </div>
@@ -36,11 +36,11 @@ tags:
 <script type="text/javascript">
       var gitalk = new Gitalk({
         id: window.location.pathname,
-        clientID: '{{site.gitalk_clientId}}',
-        clientSecret: '{{site.gitalk_clientSecret}}',
-        repo: '{{site.gitalk_repo}}',
-        owner: '{{site.github_username}}',
-        admin: ['{{site.github_username}}'],
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
         distractionFreeMode: false
       });
       gitalk.render('gitalk-container');
@@ -49,21 +49,9 @@ tags:
 {% endif %}
 ```
 
-注意\{\{\}\}之间是没有空格！否则会出现``Error: Validation Failed``的错误。
-
-然后打开``_config.yml``,插入如下代码段：
-```yml
-#Gitalk settings
-gitalk_clientId: **
-gitalk_clientSecret:
-**
-gitalk_repo: sirjamie.github.io
-github_username: sirjamie
-```
-
-1. ``gitalk_clientId`` 和 ``gitalk_clientSecret`` 就是在第一步中所获得的两串密钥  ~~都是明文存储的~~；
-2. ``gitalk_repo`` 填写你的仓库名字（一般就是博客的仓库名，当然你也可以另开一个``repo``专门用来存储评论），记得确认你填写的``repo``，已经在``Setting``中打开了``issure``，否则会出现``Error``；
-3. ``github_username`` 填写博客所在 ``Github``的账户名。
+1. ``clientId`` 和 ``clientSecret`` 就是在第一步中所获得的两串密钥  ~~都是明文存储的~~；
+2. ``repo`` 填写你的仓库名字（一般就是博客的仓库名，当然你也可以另开一个``repo``专门用来存储评论），记得确认你填写的``repo``，已经在``Setting``中打开了``issure``，否则会出现``Error``；
+3. ``owner``和``admin``填写博客所在 ``Github``的账户名。
 
 push后，等几分钟，刷新一下网页，看看是不是成功了！
 
