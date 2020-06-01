@@ -58,7 +58,6 @@ kramdown:
 gitalk_clientId: 7b7611a89d89ba23c457
 gitalk_clientSecret: 813ba010301c17d271af3ef9b6ff8336452935b7
 gitalk_repo: sirjamie.github.io
-github_username: sirjamie
 
 # Analytics settings
 # Baidu Analytics

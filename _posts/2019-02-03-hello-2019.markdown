@@ -4,7 +4,7 @@ title:      "Welcome to SirJamie Blog"
 subtitle:   " \"Hello World, Hello Blog\""
 date:       2019-02-03 10:00:00
 author:     "SirJamie"
-header-img: "img/post-bg-2019.jpg"
+header-img: "img/head-post/post-bg-2019.jpg"
 tags:
     - 生活
 ---
