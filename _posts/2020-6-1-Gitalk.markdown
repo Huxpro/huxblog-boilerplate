@@ -44,7 +44,7 @@ tags:
         distractionFreeMode: false
       });
       gitalk.render('gitalk-container');
- </script>
+</script>
 <!--gitalk js code end-->
 ```
 
