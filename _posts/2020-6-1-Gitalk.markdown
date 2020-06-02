@@ -26,7 +26,7 @@ tags:
 
 ## 调用Gitalk
 
-因为是在页面底部添加评论区，所以打开```_layouts/post.html```,在“合适”的地方(比如``duoshuo``代码附近)插入如下代码块：
+因为是在页面底部添加评论区，所以打开``_layouts/post.html``,在“合适”的地方(比如**duoshuo**代码附近)插入如下代码块：
 ```js
 <!--gitalk js code start-->
 <div id="gitalk-container"></div>
@@ -46,7 +46,6 @@ tags:
       gitalk.render('gitalk-container');
  </script>
 <!--gitalk js code end-->
-{% endif %}
 ```
 
 1. ``clientId`` 和 ``clientSecret`` 就是在第一步中所获得的两串密钥  ~~都是明文存储的~~；
