@@ -7,6 +7,7 @@ author:     "SirJamie"
 header-img: "img/head-post/post-bg-2019.jpg"
 tags:
     - Life
+    - Blog
 ---
 
 > “Yeah It's on. ”
