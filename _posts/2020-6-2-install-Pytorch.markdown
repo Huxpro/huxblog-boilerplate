@@ -4,7 +4,7 @@ title:      "Mac用Conda安装Pytorch"
 subtitle:   "Anaconda换源"
 date:       2020-06-02
 author:     "SirJamie"
-header-img: "img/head-post/post-bg-install-pytroch.jpg"
+header-img: "img/head-post/post-bg-install-pytroch.png"
 tags:
     - Pytorch
 ---
@@ -19,7 +19,7 @@ anaconda镜像可以到[这里](https://mirrors.tuna.tsinghua.edu.cn/anaconda/ar
 
 按照[官方文档](https://mirror.tuna.tsinghua.edu.cn/help/anaconda/)来就好
 
-``open ~/.condarc``
+终端中运行 ``open ~/.condarc``
 
 替换为
 ```
