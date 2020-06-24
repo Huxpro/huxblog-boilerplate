@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Farewell"
-subtitle:   ""
+subtitle:   "My Youth"
 date:       2020-06-24
 author:     "SirJamie"
 header-img: "img/head-post/post-bg-goodbye-college.jpg"
@@ -40,4 +40,4 @@ tags:
 再见了，大学。
 farewell，我的青春。
 
-![love](../img/in-post/post-goodbye-college.jpg)
+![love](/img/in-post/post-goodbye-college.jpg)
