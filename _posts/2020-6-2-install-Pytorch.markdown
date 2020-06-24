@@ -19,6 +19,8 @@ anaconda镜像可以到[这里](https://mirrors.tuna.tsinghua.edu.cn/anaconda/ar
 
 按照[官方文档](https://mirror.tuna.tsinghua.edu.cn/help/anaconda/)来就好
 
+本人具体操作如下：
+
 终端中运行 ``open ~/.condarc``
 
 替换为
@@ -50,7 +52,9 @@ custom_channels:
 ---
 
 ## 安装Pytorch
-按照[官网](https://pytorch.org/get-started/locally/)来就好 
+在[官网](https://pytorch.org/get-started/locally/)按照本机配置进行选择
+
+本人具体操作如下：
 
 运行 ``conda install pytorch torchvision -c pytorch`` 即可
 
