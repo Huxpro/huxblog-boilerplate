@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Mac用Conda安装Pytorch"
-subtitle:   "Anaconda换源"
+subtitle:   "利用Anaconda，方便快速"
 date:       2020-06-02
 author:     "SirJamie"
 header-img: "img/head-post/post-bg-install-pytroch.png"
