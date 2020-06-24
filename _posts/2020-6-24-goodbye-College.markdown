@@ -7,7 +7,6 @@ author:     "SirJamie"
 header-img: "img/head-post/post-bg-goodbye-college.jpg"
 tags:
     - Life
-    - Blog
 ---
 
 终于，还是要到走了的时候了。
