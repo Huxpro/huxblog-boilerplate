@@ -6,7 +6,8 @@ date:       2020-06-02
 author:     "SirJamie"
 header-img: "img/head-post/post-bg-install-pytroch.png"
 tags:
-    - Pytorch
+    - Mac
+    - Deep Learning
 ---
 
 ## 安装anaconda
