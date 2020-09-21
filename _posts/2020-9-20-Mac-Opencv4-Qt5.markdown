@@ -2,9 +2,9 @@
 layout:     post
 title:      "Mac安装Opencv4，并使用Qt5调用"
 subtitle:   "解决ld symbol(s) not found for architecture x86_64问题"
-date:       2020-10-20
+date:       2020-9-20
 author:     "SirJamie"
-header-img: "img/head-post/post-bg-opencv.jpg"
+header-img: "img/head-post/post-bg-opencv4.jpg"
 tags:
     - Mac
     - OpenCV
