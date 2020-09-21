@@ -68,7 +68,7 @@ ga_domain: auto
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "笨鸟先飞"
+sidebar-about-description: "I am a slow walker, but I never walk back."
 sidebar-avatar: /img/avatar-Jamie.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -83,8 +83,7 @@ featured-condition-size: 0              # A tag will be featured if the size of 
 friends: [
     {
         title: "惟木匠心",
-        href: "http://woodencube.us/"
-        
+        href: "http://www.waymove.net"
     },{
         title: "ROS",
         href: "http://www.ros.org/"
