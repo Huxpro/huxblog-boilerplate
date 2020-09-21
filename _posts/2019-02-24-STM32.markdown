@@ -7,8 +7,6 @@ author:     "SirJamie"
 header-img: "img/head-post/post-bg-bloodborne.jpg"
 tags:
     - ROS
-    - STM32
-    - Linux
 ---
 
 > 记录一下，写写流水账。写得不对的地方请指出，谢谢！

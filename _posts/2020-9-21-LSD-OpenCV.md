@@ -19,9 +19,8 @@ ls->detect(img,lines);
 ls->drawSegments(res,lines);
 ```
 
-
+先包含一下头文件``#include "opencv2/ximgproc.hpp"``
 ```cpp
-#include "opencv2/ximgproc.hpp"
 //FSD  a inplacement of LSD in OpenCV4 due to license issues
 cv::Ptr<cv::ximgproc::FastLineDetector> fld= cv::ximgproc::createFastLineDetector();
 fld->detect(img,lines);

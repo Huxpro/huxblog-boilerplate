@@ -8,7 +8,6 @@ header-img: "img/head-post/post-bg-alita.jpg"
 tags:
     - ROS
     - SLAM
-    - Linux
 ---
 
 > 记录一下，写写流水账。写得不对的地方请指出，谢谢！
@@ -16,14 +15,15 @@ tags:
 
 ## Catagory
 
-1. [算法选择](#算法选择)
-2. [RTAB-Map](#rtab-map)
-3. [建图](#建图)
-4. [导航](#导航)
-5. [move_base](#move_base)
-6. [配置文件](#配置文件)
-7. [后记](#后记)
-8. [参考博文](#参考博文)
+- [Catagory](#catagory)
+- [算法选择](#算法选择)
+- [RTAB-Map](#rtab-map)
+- [建图](#建图)
+- [导航](#导航)
+- [move_base](#move_base)
+- [配置文件](#配置文件)
+- [后记](#后记)
+- [参考博文](#参考博文)
 
 
 ---
