@@ -1,12 +1,12 @@
 ---
 layout:     post
-title:      "thinkphp的一些看法"
-subtitle:   "对thinkphp的一些看法"
+title:      "thinkphp3的一些看法"
+subtitle:   "对thinkphp3的一些看法"
 date:       2016-11-19
 author:     "Dale"
 header-img: "img/post-bg-js-version.jpg"
 tags:
-    - thinkphp
+    - thinkphp3
   
 ---
 ## thinkphp
