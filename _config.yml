@@ -84,8 +84,13 @@ friends: [
     {
         title: "Hux Blog(模板作者的网页)",
         href: "http://huangxuan.me"
-    },{
+    },
+    {
         title: "Lanvsblue",
-        href: "www.lanvsblue.top"
-    }
+        href: "http://www.lanvsblue.top"
+    },
+    {
+             title: "live2d-widget(看板娘)",
+             href: "https://github.com/stevenjoezhang/live2d-widget"
+         }
 ]
