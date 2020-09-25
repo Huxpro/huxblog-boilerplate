@@ -2,7 +2,8 @@
 layout: page
 description: "dale博客"
 ---
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/waifu.css">
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
@@ -40,3 +41,6 @@ description: "dale博客"
     {% endif %}
 </ul>
 {% endif %}
+<script src="js/live2d.min.js"></script>
+<script src="js/waifu-tips.js"></script>
+<script src="js/autoload.js"></script>
