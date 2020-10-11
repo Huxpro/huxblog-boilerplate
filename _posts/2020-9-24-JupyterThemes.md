@@ -23,8 +23,8 @@ pip install --upgrade jupyterthemes
 安装完之后 ``cd ~/.local/bin`` 
 然后 ``jt -l`` 查看想要安装的主题
 
-我本人选择了iTerm2相同的主题 solarizedd
-使用命令``jt -t solarizedd``切换
+我本人选择gruvboxd
+使用命令``jt -t gruvboxd -N -T``切换
 
 要是都不喜欢就``jt -r``换回默认的
 
@@ -38,7 +38,7 @@ from jupyterthemes import jtplot
 
 # choose which theme to inherit plotting style from
 # onedork | grade3 | oceans16 | chesterish | monokai | solarizedl | solarizedd
-jtplot.style(theme='solarizedd')
+jtplot.style(theme='gruvboxd')
 
 # set "context" (paper, notebook, talk, poster)
 # scale font-size of ticklabels, legend, etc.
