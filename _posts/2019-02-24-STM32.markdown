@@ -4,7 +4,7 @@ title:      "ROS小车开发之底盘控制"
 subtitle:   "stm32+步进电机+麦克纳姆轮"
 date:       2019-02-24
 author:     "SirJamie"
-header-img: "img/head-post/post-bg-bloodborne.jpg"
+header-img: "img/head-post/post-bg-stm32.jpg"
 tags:
     - ROS
 ---
