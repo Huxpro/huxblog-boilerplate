@@ -4,7 +4,7 @@ title:      "安装spconv踩坑实录"
 subtitle:   "配好环境就等于成功了一大半"
 date:       2020-10-19
 author:     "SirJamie"
-header-img: "img/head-post/post-bg-OpenPCDet.jpg"
+header-img: "img/head-post/post-bg-OpenPCDet.jpeg"
 tags:
     - linux
 ---
