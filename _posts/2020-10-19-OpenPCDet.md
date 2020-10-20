@@ -45,7 +45,7 @@ cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
 ---
 
 ## 安装PyTorch
-安装anaconda可参考[本文](2020-6-2-install-Pytorch.markdown)
+安装anaconda可参考[本文](/_posts/2020-6-2-install-Pytorch.markdown)
 
 新建虚拟环境并进入
 ```
@@ -69,7 +69,7 @@ torch.empty(5,3)
 ---
 
 ## 安装spconv(最难的一步了)
-下面两部的git clone指令，都可使用[本文](2020-10-18-git-clone.md)来进行加速
+下面两部的git clone指令，都可使用[本文](/_posts/2020-10-18-git-clone.md)来进行加速
 
 ### 1
 clone [这个版本](https://github.com/traveller59/spconv/tree/468b5713edd3f27493fd35a195458945ade3cef2)的spconv
