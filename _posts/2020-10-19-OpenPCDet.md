@@ -40,7 +40,9 @@ sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda/lib64/libcudnn*
 ```
 cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
 ```
-检测是否安装成功。v8执行此条命令会输出为空。
+检测是否安装成功。
+
+v8执行此条命令输出会为空。
 
 ---
 
@@ -52,8 +54,7 @@ cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
 conda create -n pcdet
 conda activate pcdet
 ```
-安装1.3.1的PyTorch，注意对应相应的CUDA版本(使用```nvcc -V```查看)。
-**不建议安装更高版本，会和spconv冲突！！！**
+安装1.3.1的PyTorch，注意对应相应的CUDA版本(使用```nvcc -V```查看)。**不建议安装更高版本，容易和spconv冲突！！！**
 ```
 conda install pytorch==1.3.1 torchvision==0.4.2 cudatoolkit=10.1 -c pytorch
 ```
@@ -72,7 +73,7 @@ torch.empty(5,3)
 下面两部的git clone指令，都可使用[本文](https://sirjamie.github.io/2020/10/18/git-clone/)来进行加速
 
 ### 1
-clone [这个版本](https://github.com/traveller59/spconv/tree/468b5713edd3f27493fd35a195458945ade3cef2)的spconv
+建议clone [这个版本](https://github.com/traveller59/spconv/tree/468b5713edd3f27493fd35a195458945ade3cef2)的spconv
 (本人测试通过)
 
 ### 2
@@ -122,9 +123,11 @@ pip install spconv-1.2.1-cp38-cp38m-linux_x86_64.whl
 第二步根据目录具体按照自己安装的版本，不要完全照搬我的！（建议Tab哈哈哈哈哈
 
 至此，大功告成！
+
 ---
 
 ## 安装OpenPCDet
+这一步就比较简单了,跟着官方安装文档来就好。建议完整看完，有明确思路(版本匹配)后再实操。
 ```
 git clone https://github.com.cnpmjs.org/open-mmlab/OpenPCDet.git
 
