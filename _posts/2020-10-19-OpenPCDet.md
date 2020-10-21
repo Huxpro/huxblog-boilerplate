@@ -29,7 +29,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 主要是这几步
 ```
-tar -xzvf cudnn-x.x-linux-x64-v8.x.x.x.tgz
+tar -xzvf cudnn-x.x-linux-x64-v7.x.x.x.tgz
 
 sudo cp cuda/include/cudnn*.h /usr/local/cuda/include
 sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64
@@ -70,14 +70,14 @@ torch.empty(5,3)
 ---
 
 ## 安装spconv(最难的一步了)
-下面两部的git clone指令，都可使用[本文](https://sirjamie.github.io/2020/10/18/git-clone/)来进行加速
+下面两步的```git clone```指令，都可使用[本文](https://sirjamie.github.io/2020/10/18/git-clone/)来进行加速
 
 ### 1
 建议clone [这个版本](https://github.com/traveller59/spconv/tree/468b5713edd3f27493fd35a195458945ade3cef2)的spconv
 (本人测试通过)
 
 ### 2
-对于其包含的```third_party/pybind11```,单独进入```third_party```git clone pybind11。
+对于其包含的```third_party/pybind11```,单独进入```third_party```执行相应的```git clone```。
 
 ### 3
 ```sudo apt-get install libboost-all-dev```
@@ -101,7 +101,7 @@ cmake --version
 
 ### 5
 然后进入目录 ```anaconda3/pkgs/pytorch-1.5.1-py3.8_cuda10.1.243_cudnn7.6.3_0/lib/python3.8/site-packages/torch/share/cmake/Caffe2/Caffe2Targets```注释包含```-Wall```的两行```INTERFACE_COMPILE_OPTIONS```
-目录具体按照自己安装的版本，不要完全照搬我的！
+目录具体按照自己安装的版本，**不要**完全照搬我的！
 
 ### 6
 执行
@@ -120,7 +120,7 @@ cd dist
 
 pip install spconv-1.2.1-cp38-cp38m-linux_x86_64.whl
 ```
-第二步根据目录具体按照自己安装的版本，不要完全照搬我的！（建议Tab哈哈哈哈哈
+版本号 也要具体问题具体分析嗷（笑
 
 至此，大功告成！
 
