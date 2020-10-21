@@ -7,7 +7,6 @@ author:     "SirJamie"
 header-img: "img/head-post/post-bg-pytroch.png"
 tags:
     - Mac
-    - Deep Learning
 ---
 
 ## 安装anaconda

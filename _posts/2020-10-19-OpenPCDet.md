@@ -6,7 +6,8 @@ date:       2020-10-19
 author:     "SirJamie"
 header-img: "img/head-post/post-bg-OpenPCDet.jpeg"
 tags:
-    - linux
+    - Linux
+    - 3D
 ---
 
 > 本人的版本 Ubuntu16.04 + CUDA10.1 + cuDNN7.6.5 + PyTorch1.3.1 + spconv1.2
