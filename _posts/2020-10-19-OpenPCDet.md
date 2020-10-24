@@ -124,6 +124,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
 export CUDA_HOME=/usr/local/cuda
 ```
 
+类似```PATH```这样的写法是指在原变量的基础上上添加新的路径，```CUDA_HOME```这样的写法是一对一的指定
 
 
 ### 7
