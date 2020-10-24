@@ -101,7 +101,7 @@ cmake --version
 ```
 
 ### 5
-然后进入目录 ```anaconda3/pkgs/pytorch-1.5.1-py3.8_cuda10.1.243_cudnn7.6.3_0/lib/python3.8/site-packages/torch/share/cmake/Caffe2/Caffe2Targets```注释包含```-Wall```的两行```INTERFACE_COMPILE_OPTIONS```
+然后进入目录 ```anaconda3/pkgs/pytorch-1.3.1-py3.7_cuda10.1.243_cudnn7.6.3_0/lib/python3.8/site-packages/torch/share/cmake/Caffe2/Caffe2Targets```注释包含```-Wall```的两行```INTERFACE_COMPILE_OPTIONS```
 目录具体按照自己安装的版本，**不要**完全照搬我的！
 
 ### 6
@@ -111,8 +111,19 @@ python setup.py bdist_wheel
 ```
 
 这一步报错最多，仔细看报错原因。本人碰到
->1.cmake版本太低 
+> 1.cmake版本太低 
+> 2.CUDA路径设置不对
 等问题
+
+解决方法:
+1.升级cmake
+2.将如下CUDA的路径添加入```~/.bashrc```文件中
+```
+export PATH=$PATH:/usr/local/cuda/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
+export CUDA_HOME=/usr/local/cuda
+```
+
 
 
 ### 7
@@ -139,6 +150,12 @@ pip install -r requirements.txt
 python setup.py develop
 ```
 
-最后一步如果报错```fatal error: cuda.h: No such file or directory.``` 则可以通过在当前虚拟环境下```export C_INCLUDE_PATH=/usr/local/cuda/include```来解决。
+最后一步如果报错```fatal error: cuda.h: No such file or directory``` 则可以通过在```~/.bashrc```中添加如下代码
+```
+export C_INCLUDE_PATH=$C_INCLUDE_PATH:/usr/local/cuda/include
+export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/usr/local/cuda/include
+export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/cuda/lib
+```
+来解决。
 
 ---
