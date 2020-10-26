@@ -101,7 +101,7 @@ cmake --version
 ```
 
 ### 5
-然后进入目录 ```anaconda3/pkgs/pytorch-1.3.1-py3.7_cuda10.1.243_cudnn7.6.3_0/lib/python3.7/site-packages/torch/share/cmake/Caffe2/Caffe2Targets```注释包含```-Wall```的两行```INTERFACE_COMPILE_OPTIONS```
+然后进入目录 ```anaconda3/pkgs/pytorch-1.3.1-py3.7_cuda10.1.243_cudnn7.6.3_0/lib/python3.7/site-packages/torch/share/cmake/Caffe2/Caffe2Targets```注释包含```-Wall```的整行```INTERFACE_COMPILE_OPTIONS```
 目录具体按照自己安装的版本，**不要**完全照搬我的！
 
 ### 6
