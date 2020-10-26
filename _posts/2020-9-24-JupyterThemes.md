@@ -6,7 +6,6 @@ date:       2020-9-24
 author:     "SirJamie"
 header-img: "img/head-post/post-bg-jupyterthemes.jpg"
 tags:
-    - Mac
     - Python
 ---
 
