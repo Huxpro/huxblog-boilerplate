@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "安装spconv踩坑实录"
+title:      "安装OpenPCDet踩坑实录"
 subtitle:   "配好环境就等于成功了一大半"
 date:       2020-10-19
 author:     "SirJamie"
@@ -10,7 +10,7 @@ tags:
     - 3D
 ---
 
-> 本人的版本 Ubuntu16.04 + CUDA10.1 + cuDNN7.6.5 + PyTorch1.3.1 + spconv1.2
+> 本人的版本 Ubuntu16.04 + CUDA10.1 + cuDNN7.6.5 + PyTorch1.4.0 + spconv1.2.1
 
 ## pip换源
 
@@ -55,9 +55,9 @@ v8执行此条命令输出会为空。
 conda create -n pcdet
 conda activate pcdet
 ```
-安装1.3.1的PyTorch，注意对应相应的CUDA版本(使用```nvcc -V```查看)。**不建议安装更高版本，容易和spconv冲突！！！**
+安装1.4.0的PyTorch，注意对应相应的CUDA版本(使用```nvcc -V```查看)。**不建议安装更高版本，容易和spconv冲突！！！**
 ```
-conda install pytorch==1.3.1 torchvision==0.4.2 cudatoolkit=10.1 -c pytorch
+conda install pytorch==1.4.0 torchvision==0.5.0 cudatoolkit=10.1 -c pytorch
 ```
 
 之后使用打开python，执行
@@ -76,6 +76,11 @@ torch.empty(5,3)
 ### 1
 建议clone [这个版本](https://github.com/traveller59/spconv/tree/468b5713edd3f27493fd35a195458945ade3cef2)的spconv
 (本人测试通过)
+```
+git clone https://github.com/traveller59/spconv.git
+
+git checkout 468b5713ed
+```
 
 ### 2
 对于其包含的```third_party/pybind11```,单独进入```third_party```执行相应的```git clone```。
@@ -86,22 +91,12 @@ torch.empty(5,3)
 ### 4
 确保cmake版本>= 3.13.2并已添加到PATH
 ```
-cd ~/Download
-wget https://cmake.org/files/v3.18/cmake-3.18.4-Linux-x86_64.tar.gz
-tar -xzvf cmake-3.18.4-Linux-x86_64.tar.gz
-
-# 解压出来的包，将其放在 /opt 目录下，其他目录也可以，主要别以后不小心删了
-sudo mv cmake-3.18.4-Linux-x86_64 /opt/cmake-3.18.4
-
-# 建立软链接
-sudo ln -sf /opt/cmake-3.18.4/bin/*  /usr/bin/
-
-# 查看 cmake 版本
-cmake --version
+pip install cmake==3.18.0
 ```
 
+
 ### 5
-然后进入目录 ```anaconda3/pkgs/pytorch-1.3.1-py3.7_cuda10.1.243_cudnn7.6.3_0/lib/python3.7/site-packages/torch/share/cmake/Caffe2/Caffe2Targets```注释包含```-Wall```的整行```INTERFACE_COMPILE_OPTIONS```
+然后进入目录 ```anaconda3/pkgs/pytorch-1.4.0-py3.8_cuda10.1.243_cudnn7.6.3_0/lib/python3.8/site-packages/torch/share/cmake/Caffe2/``` 编辑```Caffe2Targets.cmake```文件,注释包含```-Wall```的整行```INTERFACE_COMPILE_OPTIONS```
 目录具体按照自己安装的版本，**不要**完全照搬我的！
 
 ### 6
@@ -131,9 +126,9 @@ export CUDA_HOME=/usr/local/cuda
 ```
 cd dist
 
-pip install spconv-1.2.1-cp37-cp37m-linux_x86_64.whl
+pip install spconv-1.2.1-cp38-cp38m-linux_x86_64.whl
 ```
-版本号 也要具体问题具体分析嗷（笑
+版本号 也要**具体问题具体分析**嗷（笑
 
 至此，大功告成！
 
@@ -142,7 +137,7 @@ pip install spconv-1.2.1-cp37-cp37m-linux_x86_64.whl
 ## 安装OpenPCDet
 这一步就比较简单了,跟着官方安装文档来就好。建议完整看完，有明确思路(版本匹配)后再实操。
 ```
-git clone https://github.com.cnpmjs.org/open-mmlab/OpenPCDet.git
+git clone https://github.com/open-mmlab/OpenPCDet.git
 
 cd OpenPCDet
 
