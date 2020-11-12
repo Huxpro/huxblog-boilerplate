@@ -10,7 +10,7 @@ tags:
     - 3D
 ---
 
-> 本人的版本 Ubuntu16.04 + CUDA10.1 + cuDNN7.6.5 + PyTorch1.4.0 + spconv1.2.1
+> 本人的版本 Ubuntu16.04 + CUDA10.1 + cuDNN7.6.5 + PyTorch1.3.1 + spconv1.2.1
 
 ## pip换源
 
@@ -55,9 +55,9 @@ v8执行此条命令输出会为空。
 conda create -n pcdet
 conda activate pcdet
 ```
-安装1.4.0的PyTorch，注意对应相应的CUDA版本(使用```nvcc -V```查看)。**不建议安装更高版本，容易和spconv冲突！！！**
+安装1.3.1的PyTorch，注意对应相应的CUDA版本(使用```nvcc -V```查看)。**不建议安装更高版本，容易和spconv冲突！！！**
 ```
-conda install pytorch==1.4.0 torchvision==0.5.0 cudatoolkit=10.1 -c pytorch
+conda install pytorch==1.3.1 torchvision==0.4.2 cudatoolkit=10.1 -c pytorch
 ```
 
 之后使用打开python，执行
@@ -96,7 +96,7 @@ pip install cmake==3.18.0
 
 
 ### 5
-然后进入目录 ```anaconda3/pkgs/pytorch-1.4.0-py3.8_cuda10.1.243_cudnn7.6.3_0/lib/python3.8/site-packages/torch/share/cmake/Caffe2/``` 编辑```Caffe2Targets.cmake```文件,注释包含```-Wall```的整行```INTERFACE_COMPILE_OPTIONS```
+然后进入目录 ```anaconda3/pkgs/pytorch-1.3.1-py3.7_cuda10.1.243_cudnn7.6.3_0/lib/python3.7/site-packages/torch/share/cmake/Caffe2/``` 编辑```Caffe2Targets.cmake```文件,注释包含```-Wall```的整行```INTERFACE_COMPILE_OPTIONS```
 目录具体按照自己安装的版本，**不要**完全照搬我的！
 
 ### 6
@@ -126,7 +126,7 @@ export CUDA_HOME=/usr/local/cuda
 ```
 cd dist
 
-pip install spconv-1.2.1-cp38-cp38m-linux_x86_64.whl
+pip install spconv-1.2.1-cp37-cp37m-linux_x86_64.whl
 ```
 版本号 也要**具体问题具体分析**嗷（笑
 
