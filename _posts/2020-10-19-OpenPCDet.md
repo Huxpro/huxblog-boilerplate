@@ -4,7 +4,7 @@ title:      "安装OpenPCDet踩坑实录"
 subtitle:   "配好环境就等于成功了一大半"
 date:       2020-10-19
 author:     "SirJamie"
-header-img: "img/head-post/post-bg-OpenPCDet.jpeg"
+header-img: "img/head-post/post-bg-lyf.jpeg"
 tags:
     - Linux
     - 3D
