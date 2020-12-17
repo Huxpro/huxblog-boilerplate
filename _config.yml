@@ -4,9 +4,9 @@ SEOTitle: SirJamie的博客 | SirJamie Blog
 header-img: img/home-bg.jpg
 email: SirJamie@qq.com
 description: "No Pain, No Gain"
-keyword: "SirJamie, SirJamie Blog, SirJamie的博客, Mac, SLAM"
+keyword: "SirJamie, SirJamie Blog, SirJamie的博客, 3D Object Detection, SLAM"
 url: "https://sirjamie.github.io"              # your host, for absolute URL
-baseurl: "/blog"         # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
