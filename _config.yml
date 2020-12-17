@@ -1,22 +1,22 @@
 # Site settings
-title: Your Blog
-SEOTitle: 你的博客 | Your Blog
+title: SirJamie Blog
+SEOTitle: SirJamie的博客 | SirJamie Blog
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
-description: ""
-keyword: ""
-url: "http://huangxuan.me"              # your host, for absolute URL
-baseurl: "/huxblog-boilerplate"         # for example, '/blog' if your blog hosted on 'host/blog'
+email: SirJamie@qq.com
+description: "No Pain, No Gain"
+keyword: "SirJamie, SirJamie Blog, SirJamie的博客, Mac, SLAM"
+url: "https://sirjamie.github.io"              # your host, for absolute URL
+baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
 RSS: false
-weibo_username:     huxpro
-zhihu_username:     huxpro
-github_username:    huxpro
-#twitter_username:  huxpro
-facebook_username:  huxpro
+# weibo_username:     huxpro
+# zhihu_username:     jamie-44-60
+github_username:    SirJamie
+# twitter_username:  huxpro
+# facebook_username:  huxpro
 
 
 
@@ -50,51 +50,45 @@ kramdown:
 #disqus_username: _your_disqus_short_name_
 
 # Duoshuo settings
-duoshuo_username: huxblog
+# duoshuo_username: huxblog
 # Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+# duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
-
-
+#Gitalk settings
+gitalk_clientId: 7b7611a89d89ba23c457
+gitalk_clientSecret: 813ba010301c17d271af3ef9b6ff8336452935b7
+gitalk_repo: sirjamie.github.io
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+ba_track_id: 72f2e589c2113b26fb3c01f6cc1d2f60
 # Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
-
-
+ga_track_id: 'UA-16683635-1'            # Format: UA-xxxxxx-xx
+ga_domain: auto
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "写写代码，做做设计，看看产品。世界那么大，多玩玩看看。"
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "I am a slow walker, but I never walk back."
+sidebar-avatar: /img/avatar-Jamie.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+featured-condition-size: 0              # A tag will be featured if the size of it is more than this condition value
 
 
 
 # Friends
 friends: [
     {
-        title: "Hux Blog",
-        href: "http://huangxuan.me"
+        title: "惟木匠心",
+        href: "http://www.waymove.net"
     },{
-        title: "Foo",
-        href: "#"
+        title: "ROS",
+        href: "http://www.ros.org/"
     },{
-        title: "Bar",
-        href: "#"
-    },{
-        title: "Example Friends",
-        href: "#"
-    },{
-        title: "It helps SEO",
-        href: "#"
+        title: "Apple Developer",
+        href: "https://developer.apple.com/"
     }
 ]

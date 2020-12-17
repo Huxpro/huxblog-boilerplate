@@ -1,0 +1,52 @@
+---
+layout:     post
+title:      "Welcome to SirJamie Blog"
+subtitle:   " \"Hello World, Hello Blog\""
+date:       2019-02-03 10:00:00
+author:     "SirJamie"
+header-img: "img/head-post/post-bg-2019.jpg"
+tags:
+    - Life
+    - Blog
+---
+
+> “Yeah It's on. ”
+
+
+## 前言
+
+SirJamie 的 Blog 就这么开通了。
+
+[跳过废话，直接看技术实现 ](#build)
+
+
+
+2019 年，我总算有个地方可以好好写点东西了。（虽然随缘更新，也没有人看
+
+
+作为一个程序员， Blog 这种轮子要是挂在大众博客程序上就太没意思了。一是觉得大部分 Blog 服务都太丑，二是觉得不能随便定制不好玩。之前因为太懒没有折腾，结果就一直连个写 Blog 的地儿都没有。
+
+寒假的空闲时间又激起了我开博客的冲动。干脆一不做二不休，花一天搞一个吧！
+
+
+<p id = "build"></p>
+---
+
+## 正文
+
+接下来说说搭建这个博客的技术细节。  
+
+正好之前就有关注过 [GitHub Pages](https://pages.github.com/) + [Jekyll](http://jekyllrb.com/) 快速 Building Blog 的技术方案，非常轻松时尚。
+
+其优点非常明显：
+
+* **Markdown** 带来的优雅写作体验
+* 非常熟悉的 Git workflow ，**Git Commit 即 Blog Post**
+* 利用 GitHub Pages 的域名和免费无限空间，不用自己折腾主机
+	* 如果需要自定义域名，也只需要简单改改 DNS 加个 CNAME 就好了
+* Jekyll 的自定制非常容易，基本就是个模版引擎
+
+
+配置环境参考了 [这篇文章](https://github.com/qiubaiying/qiubaiying.github.io/wiki/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B) ， 而整个Project frok 了 [Hux](https://github.com/Huxpro/huxblog-boilerplate) 的这个精简版本。
+
+配置的过程中也没遇到什么坑，基本就是 Git 的流程，顺便用了一下 Git Desktop， 配置了 Git 的环境，以前只知道 git clone （菜鸡的泪水
