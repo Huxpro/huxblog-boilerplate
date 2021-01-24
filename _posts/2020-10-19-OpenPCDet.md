@@ -52,7 +52,7 @@ v8执行此条命令输出会为空。
 
 新建虚拟环境并进入
 ```
-conda create -n pcdet
+conda create -n pcdet python=3.7
 conda activate pcdet
 ```
 安装1.3.1的PyTorch，注意对应相应的CUDA版本(使用```nvcc -V```查看)。**不建议安装更高版本，容易和spconv冲突！！！**
