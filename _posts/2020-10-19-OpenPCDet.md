@@ -12,6 +12,8 @@ tags:
 
 > 本人的版本 Ubuntu16.04 + CUDA10.1 + cuDNN7.6.5 + PyTorch1.3.1 + spconv1.2.1
 
+>update on 2021-3-8
+
 ## pip换源
 
 根据[清华源](https://mirrors.tuna.tsinghua.edu.cn/help/pypi/)说明，在终端执行
@@ -23,7 +25,10 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 ---
 
+
 ## 安装cuDNN
+
+### From Source
 下载[cuDNN](https://developer.nvidia.com/rdp/cudnn-archive),建议下载v7.6.5即可
 
 安装流程参考[官方文档](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html)
@@ -46,6 +51,14 @@ cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
 v8执行此条命令输出会为空。
 
 ---
+
+### From conda
+```
+conda install cudnn
+```
+
+---
+
 
 ## 安装PyTorch
 安装anaconda可参考[本文](https://sirjamie.github.io/2020/06/02/install-Pytorch/)
@@ -74,16 +87,16 @@ torch.empty(5,3)
 下面两步的```git clone```指令，都可使用[本文](https://sirjamie.github.io/2020/10/18/git-clone/)来进行加速
 
 ### 1
-建议clone [这个版本](https://github.com/traveller59/spconv/tree/468b5713edd3f27493fd35a195458945ade3cef2)的spconv
+建议clone [这个版本](https://github.com/traveller59/spconv/tree/fad3000249d27ca918f2655ff73c41f39b0f3127)的spconv
 (本人测试通过)
 ```
-git clone https://github.com/traveller59/spconv.git
+git clone https://github.com.cnpmjs.org/traveller59/spconv.git
 
-git checkout 468b5713ed
+git checkout fad3000249
 ```
 
 ### 2
-对于其包含的```third_party/pybind11```,单独进入```third_party```执行相应的```git clone```。
+参考[本文](https://sirjamie.github.io/2020/10/18/git-clone/)下载third_party文件
 
 ### 3
 ```sudo apt-get install libboost-all-dev```
