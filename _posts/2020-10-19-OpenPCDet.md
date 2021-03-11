@@ -10,9 +10,10 @@ tags:
     - 3D
 ---
 
+>update on 2021-3-8
+
 > 本人的版本 Ubuntu16.04 + CUDA10.1 + cuDNN7.6.5 + PyTorch1.3.1 + spconv1.2.1
 
->update on 2021-3-8
 
 ## pip换源
 
@@ -27,6 +28,12 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 
 ## 安装cuDNN
+### From conda
+```
+conda install cudnn
+```
+
+---
 
 ### From Source
 下载[cuDNN](https://developer.nvidia.com/rdp/cudnn-archive),建议下载v7.6.5即可
@@ -49,13 +56,6 @@ cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
 检测是否安装成功。
 
 v8执行此条命令输出会为空。
-
----
-
-### From conda
-```
-conda install cudnn
-```
 
 ---
 
