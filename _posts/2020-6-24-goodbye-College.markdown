@@ -4,7 +4,7 @@ title:      "Farewell"
 subtitle:   "My Youth"
 date:       2020-06-24
 author:     "SirJamie"
-header-img: "img/head-post/post-bg-goodbye-college.jpg"
+header-img: "img/head-post/post-bg-423.jpg"
 tags:
     - Life
 ---

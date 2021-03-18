@@ -4,7 +4,7 @@ title:      "爷青结！OpenCV4竟然没LSD了"
 subtitle:   "使用FLD替代吧"
 date:       2020-9-21
 author:     "SirJamie"
-header-img: "img/head-post/post-bg-lsd-fsd.jpg"
+header-img: "img/head-post/post-bg-lsd-curry.jpg"
 tags:
     - OpenCV
 ---

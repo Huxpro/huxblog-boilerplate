@@ -1,10 +1,10 @@
 ---
 layout:     post
-title:      "KITTI结果可视化"
+title:      "KITTI常用可视化工具"
 subtitle:   ""
 date:       2021-01-10
 author:     "SirJamie"
-header-img: "img/head-post/post-bg-.jpg"
+header-img: "img/head-post/post-bg-kitti.jpg"
 tags:
     - Linux
 ---
@@ -13,12 +13,12 @@ tags:
 
 
 ```
-conda create -n mayavi python=3.7
-conda activate mayavi
+conda create -n kitti python=3.7
+conda activate kitti
 conda install numpy matplotlib mayavi scikit-image seaborn
 conda install pyface=7.1.0
 ```
 
 ## Code
 
-https://github.com/zzzxxxttt/simple_kitti_visualization
+will be release soon

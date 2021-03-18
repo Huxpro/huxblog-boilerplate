@@ -4,7 +4,7 @@ title:      "ROS小车开发之RTAB-Map的实践"
 subtitle:   "基于Kinect2的纯视觉建图和导航"
 date:       2019-02-25
 author:     "SirJamie"
-header-img: "img/head-post/post-bg-rtabmap.jpg"
+header-img: "img/head-post/post-bg-bloodborne.jpg"
 tags:
     - ROS
     - SLAM
