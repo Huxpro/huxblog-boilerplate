@@ -1,4 +1,5 @@
 _site
+.jekyll-cache/
 node_modules
 .DS_Store
 */.DS_Store
