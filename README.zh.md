@@ -169,23 +169,19 @@ iframe在不同的设备中，将会自动的调整大小。保留内边距是�
 
 #### Comment
 
-博客不仅的多说[Duoshuo](http://duoshuo.com)评论系统，也支持disqus[Disqus](http://disqus.com)评论系统。
+博客不仅支持<del>多说[Duoshuo](http://duoshuo.com)评论系统，</del>也支持disqus[Disqus](http://disqus.com)评论系统。
 
 disqus国际比较流行，界面也很大气、简介，如果有人评论，还能实时通知，直接回复通知的邮件就行了。缺点是评论必须要去注册一个disqus账号，分享一般只有Facebook和Twitter，另外在墙内加载速度略慢了一点。想要知道长啥样，可以看以前的版本点[这里](http://brucezhaor.github.io/about.html) 最下面就可以看到。
 
-多说国内主流社交软件都有分享按钮，登陆方便，比较好管理，就是界面丑了一点。当然你是可以自定义界面的css的，详情请看多说开发者文档。
+多说已于2017年6月1日关停服务，所以不再支持。
 
-**首先**，你需要去注册一个账号，不管是disqus还是多说的。**不要直接使用我的啊！**
+**首先**，你需要去注册一个disqus账号。**不要直接使用我的啊！**
 
 **其次**，你只需要在下面的yaml头文件中设置一下就可以了。
 
 ```
-duoshuo_username: _你的用户名_
-# 或者
 disqus_username: _你的用户名_
 ```
-
-**最后**多说是支持分享的，如果你不想分享，请这样设置：`duoshuo_share: false`。你可以同时使用两个评论系统，不过个人感觉怪怪的。
 
 #### Analytics
 
@@ -198,6 +194,12 @@ ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
 ga_domain: huangxuan.me
+```
+
+Google Analytics 4 支持更多访客数据的分析，但是需要使用新的代码，如果你想使用新的代码，可以在这里设置：
+
+```yaml
+ga_new_track_id: 'G-XXXXXXXXXX'               # Format: G-XXXXXXXXXX
 ```
 
 #### Customization
@@ -229,6 +231,3 @@ There are a number of tasks it performs like minification of the JavaScript, com
 2. 感谢[@BrucZhaoR](https://github.com/BruceZhaoR)的中文翻译 
 
 3. 感谢 Jekyll、Github Pages 和 Bootstrap!
-
-
-

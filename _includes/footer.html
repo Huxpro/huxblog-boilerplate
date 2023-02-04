@@ -160,15 +160,15 @@
 </script>
 
 <!-- new version of Google Analytics -->
-{% if site.ga_new_id %}
+{% if site.ga_new_track_id %}
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_new_id }}"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_new_track_id }}"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', '{{ site.ga_new_id }}');
+    gtag('config', '{{ site.ga_new_track_id }}');
 </script>
 {% endif %}
 
