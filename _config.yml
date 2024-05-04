@@ -1,22 +1,22 @@
 # Site settings
-title: Your Blog
-SEOTitle: 你的博客 | Your Blog
+title: Huanyu Blog
+SEOTitle: 欢愚的博客 | Huanyu Blog
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
-description: ""
-keyword: ""
-url: "http://huangxuan.me"              # your host, for absolute URL
-baseurl: "/huxblog-boilerplate"         # for example, '/blog' if your blog hosted on 'host/blog'
+email: zhiyi.zhang@sjtu.edu.cn
+description: "这里是 @Huanyu欢愚 的个人博客."
+keyword: "欢愚, Huanyu欢愚, Huanyu, 欢愚的博客, Huanyu Blog, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计"
+url: "https://zskami.github.io" # your host, for absolute URL
+baseurl: "/ZsKami-blog" # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
 RSS: false
-weibo_username:     huxpro
-zhihu_username:     huxpro
-github_username:    huxpro
-#twitter_username:  huxpro
-facebook_username:  huxpro
+#weibo_username: huxpro
+#zhihu_username: huxpro
+github_username: ZsKami
+#twitter_username: huxpro
+#facebook_username:  huxpro
 
 
 
@@ -67,9 +67,9 @@ ga_domain: huangxuan.me
 
 
 # Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "写写代码，做做设计，看看产品。世界那么大，多玩玩看看。"
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar: true # whether or not using Sidebar.
+sidebar-about-description: "A graduate student in SJTU"
+sidebar-avatar: # https://github.com/Huxpro.png # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
