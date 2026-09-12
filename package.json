@@ -2,7 +2,7 @@
     "name": "hux-blog",
     "title": "Hux Blog",
     "version": "1.0.0",
-    "homepage": "http://huxpro.github.io",
+    "homepage": "https://huxpro.github.io/huxblog-boilerplate/",
     "author": "Hux",
     "devDependencies": {
         "grunt": "~0.4.5",
