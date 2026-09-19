@@ -1,8 +1,8 @@
 # Hux blog 模板
 
-### [我的博客在这里](http://huxpro.github.io)
+### [我的博客在这里](https://huxpro.github.io)
 
-### [模板在这里](http://huangxuan.me/huxblog-boilerplate/)
+### [模板在这里](https://huxpro.github.io/huxblog-boilerplate/)
 
 我的博客仓库——`huxpro.github.io`，是经常修改的，而且还会有人乱提交代码，因此给大家做了一个稳定版的模板。大家可以直接fork模板——`huxblog-boilerplate`,要改的地方我都说明了。或者可以直接下载zip到本地自己去修改。
 
@@ -93,7 +93,7 @@ tags:
 #### SideBar
 
 长这样:
-![](http://huangxuan.me/img/blog-sidebar.jpg)
+![](https://huxpro.github.io/img/blog-sidebar.jpg)
 
 设置是在 `_config.yml`文件里面的`Sidebar settings`那块。
 ```
@@ -151,7 +151,7 @@ friends: [
 
 HTML5幻灯片的排版：
 
-![](http://huangxuan.me/img/blog-keynote.jpg)
+![](https://huxpro.github.io/img/blog-keynote.jpg)
 
 这部分是用于占用html格式的幻灯片的，一般用到的是 Reveal.js, Impress.js, Slides, Prezi 等等.我认为一个现代化的博客怎么能少了放html幻灯的功能呢~
 
@@ -160,7 +160,7 @@ HTML5幻灯片的排版：
 ```
 ---
 layout:     keynote
-iframe:     "http://huangxuan.me/js-module-7day/"
+iframe:     "https://huxpro.github.io/js-module-7day/"
 ---
 ```
 
@@ -197,7 +197,7 @@ ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_domain: huxpro.github.io
 ```
 
 #### Customization
